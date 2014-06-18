@@ -73,7 +73,7 @@ error_reporting(0);
 define('DB_HOST', 'localhost');
 define('DB_PASSWORD', '');
 define('DB_UNAME', 'root');
-define('DB_NAME', 'infusionsoft-api');
+define('DB_NAME', 'user');
 
 include "loader.php";
 ?>
