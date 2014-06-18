@@ -113,8 +113,14 @@ function _getInstance($url) {
     switch ($arg[0]) {
         case 'admin':
             _cg('url', _e($arg[1], "home"));
+            
             _cg("url_instance", $arg[0]);
             _cg("instance", "admin");
+             if ($arg[1]) {
+                array_shift($arg);
+                array_shift($arg);
+                _cg("url_vars", $arg);
+            }
             break;
         default:
             if ($arg[0] != '') {
@@ -130,9 +136,9 @@ function _getInstance($url) {
                 array_shift($arg);
                 _cg("url_vars", $arg);
             }
+            
     }
 }
-
 /**
  *  Wrapper function for application level
  *  global variable
