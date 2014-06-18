@@ -1,0 +1,54 @@
+.sidebar-normal {
+    background: url("http://cdn2.hubspot.net/hub/299573/file-298150485-png/brilliant-template/images/wild_oliva_light.png") repeat scroll 0 0 transparent;
+    vertical-align:top;
+}
+
+.sidebar-normal .logo {
+    background:url("../img/wild_oliva_dark.png");
+    padding:8px 0;
+    text-align:center;
+    position:relative;
+}
+
+.sidebar-normal .navigation {
+    padding:10px 15px;
+    color:#222222;
+}
+
+.sidebar-normal .navigation a {
+    display:block;
+    color:#222222;
+    text-decoration:none;
+}
+
+.sidebar-normal .navigation a:hover {
+    color:#86B414;
+}
+
+.sidebar-normal .navigation ul {
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+.sidebar-normal .navigation li {
+    padding:10px 0;
+    border-bottom:1px solid #cdd0d7;
+    line-height:19px;
+    position: relative;
+
+}
+.sidebar-normal .navigation li:hover a {
+    color:#669900;
+}
+
+
+.sidebar-normal .navigation li:hover {
+    color:#000;
+}
+
+.sidebar-normal .navigation li img {
+    float:left;
+    padding-right:15px;
+}
