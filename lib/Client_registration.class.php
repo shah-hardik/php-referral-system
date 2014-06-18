@@ -8,7 +8,7 @@
  * @package
  * 
  */
-class Registration {
+class Client_registration {
     # constructor
 
      public static function add($fields) {
@@ -16,7 +16,7 @@ class Registration {
         $data = _escapeArray($fields);
 
         $map = array();
-        $map['username'] = 'username';
+       
         $map['salutation'] = 'salutation';
         $map['fname'] = 'fname';
         $map['lname'] = 'lname';
@@ -26,11 +26,12 @@ class Registration {
         $map['postal_code'] = 'postal_code';
         $map['phone'] = 'phone';
         $map['email'] = 'email';
-        $map['about_program'] = 'about_program';
-        $map['like_update'] = 'like_update';
+        $map['client_interes'] = 'client_interes';
+        $map['additional_information'] = 'additional_information';
+        $map['area_community'] = 'area_community';
         $map['address'] = 'address';
         $ds = _bindArray($data, $map);
-        return qi('registration', $ds);
+        return qi('client_registration', $ds);
     }
     
 
@@ -41,7 +42,7 @@ class Registration {
 
 
         
-        $map['username'] = 'username';
+        
         $map['salutation'] = 'salutation';
         $map['fname'] = 'fname';
         $map['lname'] = 'lname';
@@ -51,26 +52,28 @@ class Registration {
         $map['postal_code'] = 'postal_code';
         $map['phone'] = 'phone';
         $map['email'] = 'email';
-        $map['about_program'] = 'about_program';
-        $map['like_update'] = 'like_update';
+        $map['client_interes'] = 'client_interes';
+        $map['additional_information'] = 'additional_information';
+        $map['area_community'] = 'area_community';
+       
         $map['address'] = 'address';
         $ds = _bindArray($data, $map);
 
         $condition = "id = " . $id;
-        return qu('registration', $ds, $condition);
+        return qu('client_registration', $ds, $condition);
     }
 
     public static function delete($id) {
         $condition = "id =" . $id;
-        return qd('registration', $condition);
+        return qd('client_registration', $condition);
     }
 
-    public static function getregistrationDetail($id) {
-        return qs("SELECT * FROM registration WHERE id = " . $id);
+    public static function getclientregistrationDetail($id) {
+        return qs("SELECT * FROM client_registration WHERE id = " . $id);
     }
 
-    public static function getregisterList() {
-        return q("SELECT * FROM registration");
+    public static function getclientregisterList() {
+        return q("SELECT * FROM client_registration");
     }
 
   
