@@ -158,7 +158,8 @@ body
 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
 <img src="<?php print _MEDIA_URL?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
 <div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
-<img src="<?php print _MEDIA_URL?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></div>
+  
+<a href="./client_admin"><img src="<?php print _MEDIA_URL?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>
 </div>
 </body>
 </html>
