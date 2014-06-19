@@ -2,6 +2,14 @@
 
 $urlArgs = _cg("url_vars");
 
+if (isset($_REQUEST['fields']) && $_REQUEST['fields']['reg_id'] == '') {
+   
+    $new_reg_id = Registration::add($_REQUEST['fields']);
+    if ($new_reg_id > 0) {
+        $greetings = "Registration added successfully";
+        unset($_REQUEST['fields']);
+    }
+}
 
 if (isset($_REQUEST['fields']) && $_REQUEST['fields']['reg_id'] > 0) {
    
