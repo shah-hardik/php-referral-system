@@ -11,6 +11,7 @@
             <img src="<?php print _MEDIA_URL ?>img/logo.png" />
         </div>
         <div class="fields" id="new_login" >
+            
             <input type="text" name="username" id="username" placeholder="Email" />
             <input type="password" name="password" id="password" placeholder="Password" />
             <div>
