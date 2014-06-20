@@ -141,7 +141,7 @@ body
 <div id="wb_Shape4" style="position:absolute;left:691px;top:309px;width:223px;height:54px;z-index:5;">
 <img src="<?php print _MEDIA_URL?>img/img0025.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Shape1" style="position:absolute;left:692px;top:396px;width:223px;height:54px;z-index:6;">
-<a href="./client_admin.html"><img src="<?php print _MEDIA_URL?>img/img0026.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+<a href="<?php _U?>adminpanel"><img src="<?php print _MEDIA_URL?>img/img0026.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
 <img src="<?php print _MEDIA_URL?>img/img0027.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Text2" style="position:absolute;left:19px;top:287px;width:535px;height:16px;z-index:8;text-align:left;">
@@ -154,12 +154,14 @@ body
 <option value="Contract Signed">Contract Signed</option>
 <option value="Contact Made">Contact Made</option>
 </select>
-<textarea name="TextArea1" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
+<textarea name="comment" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
 <img src="<?php print _MEDIA_URL?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
 <div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
   
 <a href="./client_admin"><img src="<?php print _MEDIA_URL?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>
 </div>
+<!-- <input  value="1" type="image" onclick="alert('hi')" src="<?php print _MEDIA_URL?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
+   -->
 </body>
 </html>
