@@ -87,7 +87,7 @@ body
 <div id="wb_Shape4" style="position:absolute;left:691px;top:309px;width:223px;height:54px;z-index:5;">
 <img src="<?php print _MEDIA_URL?>img/img0018.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Shape1" style="position:absolute;left:692px;top:396px;width:223px;height:54px;z-index:6;">
-<a href="./adminpanel.html"><img src="<?php print _MEDIA_URL?>img/img0019.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+<a href="<?php _U?>adminpanel"><img src="<?php print _MEDIA_URL?>img/img0019.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
 <img src="<?php print _MEDIA_URL?>img/img0020.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <?php $cr = 1;?>
@@ -100,21 +100,21 @@ body
     <strong>Status: </strong><?php print $each_client['status'];?><br><br>
 </span>
 </div>
-<div id="wb_Shape6" style="position:absolute;left:308px;top:278px;width:117px;height:30px;z-index:10;">
-<a href="./client_admin/<?php print $each_client['id'];?>"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
+<!--<div id="wb_Shape6" style="position:absolute;left:308px;top:278px;width:117px;height:30px;z-index:10;">
+<a href="./client_admin.php/<?php print $each_client['id'];?>"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>-->
 
-<?php $cr++; ?>
-<?php endforeach; ?>
+
 
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
 <img src="<?php print _MEDIA_URL?>img/img0021.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Shape6" style="position:absolute;left:308px;top:278px;width:117px;height:30px;z-index:10;">
-<a href="./client_admin"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
-
-
-<div id="wb_Shape7" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
+<a href="./client_admin/<?php print $each_client['id'];?>"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
+<?php $cr++; ?>
+<?php endforeach; ?>
+<!--<div id="wb_Shape7" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
 <a href="./client_admin"><img  src="<?php print _MEDIA_URL?>img/img0023.gif" id="Shape7" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
+</div>-->
 
-</div>
+
 </body>
 </html>
