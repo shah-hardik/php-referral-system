@@ -8,5 +8,5 @@ if ($_REQUEST['logout']) {
     User::killSession();
 }
 
-_auth_url($auth_pages, "login");
+_auth_url($auth_pages, "home");
 ?>
