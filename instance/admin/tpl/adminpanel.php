@@ -87,8 +87,11 @@ body
 <div id="wb_Shape4" style="position:absolute;left:691px;top:309px;width:223px;height:54px;z-index:5;">
 <img src="<?php print _MEDIA_URL?>img/img0018.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Shape1" style="position:absolute;left:692px;top:396px;width:223px;height:54px;z-index:6;">
-<a href="<?php _U?>adminpanel"><img src="<?php print _MEDIA_URL?>img/img0019.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+
+    <a href="<?php _U?>adminpanel"><img src="<?php print _MEDIA_URL?>img/img0019.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
+    
 <img src="<?php print _MEDIA_URL?>img/img0020.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <?php $cr = 1;?>
 <div style="position:absolute;left:19px;top:287px;width:535px;height:192px;z-index:8;text-align:left;">

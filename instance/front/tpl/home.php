@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
+        <script src="//code.jquery.com/jquery.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Referral </title>
         <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -183,8 +184,9 @@
                 <div id="wb_Shape2" style="position:absolute;left:841px;top:388px;width:106px;height:26px;z-index:8;">
 
                     
-                    <input  type="submit" name="sbt_btn" value="Create"  class="btn btn-primary"> 
-                    <img src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;"></a>
+                    <input  type="submit" id="sbt_btn" name="sbt_btn" value="Create"  class="btn btn-primary" style='display:none'> 
+                    
+                    <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;" ></a>
 
                 </div>
 
@@ -202,7 +204,7 @@
 
                 <div id="wb_Shape4" style="position:absolute;left:692px;top:587px;width:223px;height:54px;z-index:12;">
 
-                    <a href="./register.html"><img src="<?php print _MEDIA_URL ?>img/img0004.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a>
+                    <a href="./registration"><img src="<?php print _MEDIA_URL ?>img/img0004.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a>
                 </div>
 
                 <div id="wb_Text6" style="position:absolute;left:659px;top:678px;width:300px;height:36px;z-index:13;text-align:left;">

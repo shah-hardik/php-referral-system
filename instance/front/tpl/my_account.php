@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <script src="//code.jquery.com/jquery.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Referral </title>
 <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -88,7 +89,7 @@ body
 <div id="wb_Text5" style="position:absolute;left:712px;top:227px;width:208px;height:19px;z-index:4;text-align:left;">
 <span style="color:#696969;font-family:Tahoma;font-size:16px;"><em>Quick Links</em></span></div>
 <div id="wb_Shape4" style="position:absolute;left:691px;top:309px;width:223px;height:54px;z-index:5;">
-<a href="./client.html"><img src="<?php print _MEDIA_URL ?>img/img0008.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+<a href="./client_registration"><img src="<?php print _MEDIA_URL ?>img/img0008.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
 <div id="wb_Shape1" style="position:absolute;left:692px;top:396px;width:223px;height:54px;z-index:6;">
 <a href="./client_info.html"><img src="<?php print _MEDIA_URL ?>img/img0009.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
@@ -96,11 +97,17 @@ body
 
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:8;">
     
-        <input  type="submit" name="logout" value="logout"  class="btn btn-primary"> 
+        <input  type="submit" id="logout" name="logout" value="logout"  class="btn btn-primary" style='display:none'> 
+        
+     
+               
+        
+        
+        
+        
         
     
-    
-<img src="<?php print _MEDIA_URL ?>img/img0011.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
+<img onclick='$("#logout").click();' src="<?php print _MEDIA_URL ?>img/img0011.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 </div>
      </form>
      </body>

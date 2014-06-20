@@ -22,6 +22,7 @@ if (isset($_REQUEST['sbt_btn'])) {
         'like_update' => _escape($_REQUEST['like_update'])
         
             ), 'REPLACE');
+    _R(lr('home'));
 
     if ($id > 0) {
         $greetings = "New User Regestred successfully";

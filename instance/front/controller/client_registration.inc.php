@@ -32,6 +32,7 @@ if (isset($_REQUEST['sbt_btn'])) {
         'area_community' => _escape($area_communites)
         
             ), 'REPLACE');
+    _R(lr('my_account'));
 
     if ($id > 0) {
         $greetings = "New Client Regestred successfully";

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+     <script src="//code.jquery.com/jquery.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Referral </title>
 <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -279,9 +280,9 @@ body
 
         <div id="wb_Shape4" style="position:absolute;left:38px;top:1029px;width:223px;height:54px;z-index:12;">
 
-        <input  type="submit" name="sbt_btn" value="Client Registration"  class="btn btn-primary"></button>    
+        <input  type="submit" name="sbt_btn" id="sbt_btn" value="Client Registration"  class="btn btn-primary" style='display:none'></button>    
         
-        <img src="<?php print _MEDIA_URL ?>img/img0006.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
+        <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0006.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
         <textarea name="additional_info[]" id="additional_info" style="position:absolute;left:41px;top:876px;width:495px;height:118px;z-index:13;" rows="6" cols="76">
 
