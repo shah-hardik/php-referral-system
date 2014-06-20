@@ -1,19 +1,21 @@
 <?php
 $urlArgs = _cg("url_vars");
+$client_id = $urlArgs[0];
+//d($_REQUEST);
 
-//d($_REQUEST['update_info']);
-
-if ($_REQUEST['update_info'] == '')
+if(isset($_REQUEST['comment']) && ($_REQUEST['comment'] != ''))
 {
     qi('client_comment', array(
             'comment' => _escape($_REQUEST['comment']),
-            'client_id' => _escape()
+            'client_id' => _escape($client_id)
             
                 ), 'REPLACE');
-    
+}
+if(isset($_REQUEST['status']) && ($_REQUEST['status'] != ''))
+{
     qu('client_registration', array(
-                    'status' => _escape($answer)
-                        ), " id = '{$data['id']}'");
+                    'status' => _escape($_REQUEST['status'])
+                        ), " id = '{$client_id}'");
 }
 
 $clientdata = qs("select * from client_registration where id = '{$urlArgs[0]}'");

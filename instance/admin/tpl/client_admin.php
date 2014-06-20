@@ -90,6 +90,7 @@ body
 </style>
 </head>
 <body>
+     <form action="" method="post">
 <div id="container">
 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:1047px;text-align:justify;z-index:0;">
 <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
@@ -119,6 +120,7 @@ body
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">None</span></div>
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Add Comments:</span></div>
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
@@ -148,20 +150,27 @@ body
 &nbsp;</div>
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
 <img src="<?php print _MEDIA_URL?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
-<select name="Combobox1" size="1" id="Combobox1" style="position:absolute;left:143px;top:272px;width:212px;height:30px;z-index:10;">
-<option selected value="Select">Select One</option>
-<option value="In Progress">In Progress</option>
-<option value="Contract Signed">Contract Signed</option>
-<option value="Contact Made">Contact Made</option>
+<select name="status" size="1" id="status" style="position:absolute;left:143px;top:272px;width:212px;height:30px;z-index:10;">
+<option selected value="">Select One</option>
+<option value="In_Progress"<?php
+                            if ($clientdata['status'] == 'In_Progress') {echo selected;}
+                            ?>>In Progress</option>
+<option value="Contract_Signed"<?php
+                            if ($clientdata['status'] == 'Contract_Signed') {echo selected;}
+                            ?>>Contract Signed</option>
+<option value="Contact_Made"<?php
+                            if ($clientdata['status'] == 'Contact_Made') {echo selected;}
+                            ?>>Contact Made</option>
 </select>
 <textarea name="comment" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
 <img src="<?php print _MEDIA_URL?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
-<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
+<!--<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
   
-<a href="./client_admin"><img src="<?php print _MEDIA_URL?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>
+<a href="./client_admin"><img src="<?php print _MEDIA_URL?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
 </div>
-<!-- <input  value="1" type="image" onclick="alert('hi')" src="<?php print _MEDIA_URL?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
-   -->
-</body>
+ <input  value="1" type="image"  src="<?php print _MEDIA_URL?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:308px;top:1128px;width:173px;height:56px;z-index:11;">
+   
+     </form>
+     </body>
 </html>

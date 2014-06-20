@@ -91,8 +91,9 @@ body
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
 <img src="<?php print _MEDIA_URL?>img/img0020.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <?php $cr = 1;?>
+<div style="position:absolute;left:19px;top:287px;width:535px;height:192px;z-index:8;text-align:left;">
 <?php foreach ($clientdata as $each_client):?>
-<div  style="position:absolute;left:19px;top:287px;width:535px;height:192px;z-index:8;text-align:left;">
+<div  style="">
 <span style="color:#696969;font-family:Arial;font-size:13px;"><?php print $cr; ?>. <strong><?php print $each_client['fname'];?>  <?php print $each_client['lname'];?>
     </strong> - Registered on:<?php $date = date('m-d-Y',strtotime($each_client['created_at']));print $date; ?> <br><br>
     <strong>Registered by:</strong><?php $regname = qs("SELECT * FROM `registration` where id = '{$each_client['reg_id']}'");?> 
@@ -107,10 +108,11 @@ body
 
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
 <img src="<?php print _MEDIA_URL?>img/img0021.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
-<div id="wb_Shape6" style="position:absolute;left:308px;top:278px;width:117px;height:30px;z-index:10;">
+<div id="wb_Shape6" style="padding-left:355px;">
 <a href="./client_admin/<?php print $each_client['id'];?>"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
 <?php $cr++; ?>
 <?php endforeach; ?>
+</div>
 <!--<div id="wb_Shape7" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
 <a href="./client_admin"><img  src="<?php print _MEDIA_URL?>img/img0023.gif" id="Shape7" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
 </div>-->
