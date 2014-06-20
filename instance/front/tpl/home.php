@@ -182,7 +182,7 @@
 
                 <div id="wb_Shape2" style="position:absolute;left:841px;top:388px;width:106px;height:26px;z-index:8;">
 
-
+                    
                     <input  type="submit" name="sbt_btn" value="Create"  class="btn btn-primary"> 
                     <img src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;"></a>
 
