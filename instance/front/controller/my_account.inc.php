@@ -7,14 +7,9 @@
  */
 
 
+if (isset($_REQUEST['logout'])) {
 
-
-
-
-
-
-
-
-
-
+    User::killSession();
+    _R('home');
+}
 ?>

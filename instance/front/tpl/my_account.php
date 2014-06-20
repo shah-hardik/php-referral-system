@@ -63,6 +63,8 @@ body
 </style>
 </head>
 <body>
+     <form name="Form1" method="post" action="" id="Form1">
+
 <div id="container">
 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:328px;text-align:justify;z-index:0;">
 <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong>Welcome Robert,</strong></span></div>
@@ -91,8 +93,15 @@ body
 <a href="./client_info.html"><img src="<?php print _MEDIA_URL ?>img/img0009.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
 <img src="<?php print _MEDIA_URL ?>img/img0010.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
+
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:8;">
+    
+        <input  type="submit" name="logout" value="logout"  class="btn btn-primary"> 
+        
+    
+    
 <img src="<?php print _MEDIA_URL ?>img/img0011.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 </div>
-</body>
+     </form>
+     </body>
 </html>
