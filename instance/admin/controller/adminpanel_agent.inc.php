@@ -1,7 +1,7 @@
 <?php
 $urlArgs = _cg("url_vars");
 
-$clientdata = q("select * from client_registration");
+$agentdata = q("select * from registration");
 
 if (isset($_REQUEST['logout'])) {
 

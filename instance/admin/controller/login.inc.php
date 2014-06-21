@@ -11,7 +11,7 @@
  */
 
 if (!isset($_SESSION['user'])) {
-    if ($_REQUEST['btn']) {
+    if (($_REQUEST['btn'])) {
 
         $user_name = _escape($_REQUEST['username']);
         $password = _escape($_REQUEST['password']);
@@ -25,8 +25,6 @@ if (!isset($_SESSION['user'])) {
         $jsInclude = "login.js.php";
     }
     $no_visible_elements = true;
-} else {
-   _R(lr('adminpanel'));
 }
 _cg("page_title", "Login");
 ?>

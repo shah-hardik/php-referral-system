@@ -20,6 +20,13 @@ if(isset($_REQUEST['status']) && ($_REQUEST['status'] != ''))
 
 $clientdata = qs("select * from client_registration where id = '{$urlArgs[0]}'");
 
+$comment = q("select * from client_comment where client_id = '{$clientdata['id']}'");
+
+if (isset($_REQUEST['logout'])) {
+
+    User::killSession();
+    _R(lr('login'));
+}
 $jsInclude = "client_admin.js.php";
 _cg("page_title", "Client Admin");
 ?>

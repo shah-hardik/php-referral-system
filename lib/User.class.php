@@ -66,6 +66,7 @@ class User {
      */
     public static function doLogin($user_name, $password) {
         self::$user_data = qs(sprintf("select * from admin_users where user_name = '%s' and password = '%s'", $user_name, md5($password)));
+        
         if (!empty(self::$user_data)) {
             self::$user_data['user_type'] = 'admin';
         }
