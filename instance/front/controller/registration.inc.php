@@ -3,6 +3,8 @@
 $urlArgs = _cg("url_vars");
 // Add new User
 
+
+
 if (isset($_REQUEST['sbt_btn'])) {
     qi('registration', array(
         'username' => _escape($_REQUEST['username']),
@@ -22,6 +24,13 @@ if (isset($_REQUEST['sbt_btn'])) {
         'like_update' => _escape($_REQUEST['like_update'])
         
             ), 'REPLACE');
+    
+    
+     $to = "whitedove549@gmail.com";
+    $subject = "test";
+    $content = "This is first mail from Referrel Project Registration";
+    _mail('whitedove549@gmail.com','test', $content);
+    
     _R(lr('home'));
 
     if ($id > 0) {
@@ -30,4 +39,5 @@ if (isset($_REQUEST['sbt_btn'])) {
         $error = "Unable to add new User";
     }
 }
+$jsInclude = "registration.js.php";
 ?> 

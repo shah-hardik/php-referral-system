@@ -1,14 +1,7 @@
 <?php
 $urlArgs = _cg("url_vars");
 
-
-if (isset($_REQUEST['logout'])) {
-
-    User::killSession();
-    _R('login');
-}
-
-$clientdata = q("select * from client_registration");
+$agentdata = q("select * from registration");
 
 if (isset($_REQUEST['logout'])) {
 
