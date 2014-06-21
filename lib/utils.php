@@ -321,14 +321,10 @@ function _mail($to, $subject, $content, $extra = array()) {
 
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
-    if (_isLocalMachine()) {
-        //_l("To Email is overwritten by -  temp@go-brilliant.com  due to dev localmachine ");
-        $to = 'temp@go-brilliant.com';
-    }
 
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-            ->setUsername(SMTP_EMAIL_USER_NAME)
-            ->setPassword(SMTP_EMAIL_USER_PASSWORD);
+            ->setUsername('hardikpanchal469@gmail.com')
+            ->setPassword('panchal1@#4');
 
     $mailer = Swift_Mailer::newInstance($transport);
 
@@ -337,9 +333,8 @@ function _mail($to, $subject, $content, $extra = array()) {
     }
 
     $message = Swift_Message::newInstance($subject)
-            ->setFrom(array(MAIL_FROM_EMAIL => MAIL_FROM_NAME))
+            ->setFrom(array('hardikpanchal469@gmail.com' => 'Hardik Panchal'))
             ->setTo($to)
-            ->setBcc('whitedove549@gmail.com')
             ->setBody($content, 'text/html', 'iso-8859-2');
 
     $result = $mailer->send($message);

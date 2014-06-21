@@ -158,7 +158,7 @@
 
 
                 <div id="wb_Shape2" style="position:absolute;left:841px;top:388px;width:106px;height:26px;z-index:8;">
-                      <input type="submit" onclick="alert('hi');" name="btn" id="btn" value="Login" class="login" style="display:none;position:absolute;left:924px;top:388px;width:106px;height:26px;z-index:8;" />
+                      <input type="submit" name="btn" id="btn" value="Login" class="login" style="display:none;position:absolute;left:924px;top:388px;width:106px;height:26px;z-index:8;" />
       
                       <a>   <img onclick='$("#btn").click()' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;"></a></div>
                 
