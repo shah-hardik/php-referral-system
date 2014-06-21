@@ -11,7 +11,7 @@
  */
 $urlArgs = _cg("url_vars");
 session_start();
-$_session['user'] = $_REQUEST['email'];
+$_SESSION['user'] = $_REQUEST['email'];
 
 
     if (isset($_REQUEST['sbt_btn'])) {

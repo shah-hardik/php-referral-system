@@ -92,15 +92,19 @@
                     <a href="./client_registration"><img src="<?php print _MEDIA_URL ?>img/img0008.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
                 <div id="wb_Shape1" style="position:absolute;left:692px;top:396px;width:223px;height:54px;z-index:6;">
                     <a href="./client_info.html"><img src="<?php print _MEDIA_URL ?>img/img0009.gif" id="Shape1" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+               
                 <div id="wb_Shape2" style="position:absolute;left:692px;top:483px;width:223px;height:54px;z-index:7;">
-                    <img src="<?php print _MEDIA_URL ?>img/img0010.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
-
+                        <a href="<?php _U?>update_info/<?php print $reg_id['id'];?>"><img src="<?php print _MEDIA_URL ?>img/img0010.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></a></div>
+            
                 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:8;">
 
                     <input  type="submit" id="logout" name="logout" value="logout"  class="btn btn-primary" style='display:none'> 
 
                     <img onclick='$("#logout").click();' src="<?php print _MEDIA_URL ?>img/img0011.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
             </div>
+        
         </form>
     </body>
 </html>
+
+

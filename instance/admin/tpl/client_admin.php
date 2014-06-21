@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <script src="//code.jquery.com/jquery.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Referral </title>
 <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -148,8 +149,15 @@ body
 <img src="<?php print _MEDIA_URL?>img/img0027.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
 <div id="wb_Text2" style="position:absolute;left:19px;top:287px;width:535px;height:16px;z-index:8;text-align:left;">
 &nbsp;</div>
+
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
-<img src="<?php print _MEDIA_URL?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
+<input  type="submit" id="logout" name="logout"  value="logout"  class="btn btn-primary" style="display:none"> 
+    <img onclick="$('#logout').click();" src="<?php print _MEDIA_URL?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
+ 
+
+
+
+
 <select name="status" size="1" id="status" style="position:absolute;left:143px;top:272px;width:212px;height:30px;z-index:10;">
 <option selected value="">Select One</option>
 <option value="In_Progress"<?php

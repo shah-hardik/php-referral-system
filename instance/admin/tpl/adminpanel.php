@@ -100,7 +100,8 @@ body
 <div style="position:absolute;left:19px;top:287px;width:535px;height:192px;z-index:8;text-align:left;">
 <?php foreach ($clientdata as $each_client):?>
 <div  style="">
-<span style="color:#696969;font-family:Arial;font-size:13px;"><?php print $cr; ?>. <strong><?php print $each_client['fname'];?>  <?php print $each_client['lname'];?>
+<span style="color:#696969;font-family:Arial;font-size:13px;"><?php print $cr; ?>. <strong>
+<?php print $each_client['fname'];?>  <?php print $each_client['lname'];?>
     </strong> - Registered on:<?php $date = date('m-d-Y',strtotime($each_client['created_at']));print $date; ?> <br><br>
     <strong>Registered by:</strong><?php $regname = qs("SELECT * FROM `registration` where id = '{$each_client['reg_id']}'");?> 
                                 &nbsp; <?php  print $regname['fname'];?>   <?php print $regname['lname'];?><br><br>

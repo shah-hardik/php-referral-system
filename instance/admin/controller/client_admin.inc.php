@@ -2,7 +2,11 @@
 $urlArgs = _cg("url_vars");
 $client_id = $urlArgs[0];
 //d($_REQUEST);
+if (isset($_REQUEST['logout'])) {
 
+    User::killSession();
+    _R(lr('login'));
+}
 if(isset($_REQUEST['comment']) && ($_REQUEST['comment'] != ''))
 {
     qi('client_comment', array(
