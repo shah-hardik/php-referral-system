@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+      <script src="//code.jquery.com/jquery.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Referral </title>
 <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -73,6 +74,8 @@ body
 </style>
 </head>
 <body>
+            <form name="Form1" method="post" action="" id="Form1">
+   
 <div id="container">
 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:81px;text-align:justify;z-index:0;">
 <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
@@ -110,16 +113,20 @@ body
 
 
 <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
-<img src="<?php print _MEDIA_URL?>img/img0021.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
+    <input  type="submit" id="logout" name="logout"  value="logout"  class="btn btn-primary" style="display:none"> 
+        
+<img onclick="$('#logout').click();" src="<?php print _MEDIA_URL?>img/img0021.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;">
+</div>
+
 <div id="wb_Shape6" style="padding-left:355px;">
 <a href="./client_admin/<?php print $each_client['id'];?>"><img src="<?php print _MEDIA_URL?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
 <?php $cr++; ?>
 <?php endforeach; ?>
 </div>
+     
 <!--<div id="wb_Shape7" style="position:absolute;left:308px;top:391px;width:117px;height:30px;z-index:11;">
 <a href="./client_admin"><img  src="<?php print _MEDIA_URL?>img/img0023.gif" id="Shape7" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
 </div>-->
-
-
+</form>
 </body>
 </html>

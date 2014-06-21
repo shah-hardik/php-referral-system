@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="//code.jquery.com/jquery.js"></script>
+          <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Referral </title>
         <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -148,11 +149,11 @@
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
 
                 <input type="text" id="email" style="position:absolute;left:747px;top:300px;width:199px;height:24px;line-height:24px;z-index:2;" 
-                       name="email" value="">
+                       name="email" value="" required/>
 
 
                 <input type="password" id="password" style="position:absolute;left:747px;top:346px;width:199px;height:24px;line-height:24px;z-index:3;" 
-                       name="password" value="">
+                       name="password" value="" required/>
 
                 <div id="wb_Text2" style="position:absolute;left:651px;top:307px;width:87px;height:18px;z-index:4;text-align:left;">
 
@@ -214,5 +215,6 @@
                 </div>
 
             </div></form>
+        <script type="text/javascript">$("#Form1").validate();</script>
     </body>
 </html>

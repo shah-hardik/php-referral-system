@@ -2,6 +2,7 @@
 <html>
 <head>
      <script src="//code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Referral </title>
 <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -246,41 +247,41 @@ body
         </select>
     
         <input type="text" id="fname" style="position:absolute;left:255px;top:75px;width:235px;height:24px;line-height:24px;z-index:2;" 
-               name="fname" value="">
+               name="fname" value="" required />
     
         <input type="text" id="lname" style="position:absolute;left:255px;top:111px;width:235px;height:24px;line-height:24px;z-index:3;"
-               name="lname" value="">
+               name="lname" value="" required/>
         
         <input type="text" id="address" style="position:absolute;left:255px;top:183px;width:375px;height:24px;line-height:24px;z-index:4;" 
-                 name="address" value="">
+                 name="address" value="" required/>
 
         <input type="text" id="company" style="position:absolute;left:255px;top:147px;width:277px;height:24px;line-height:24px;z-index:5;" 
-               name="company" value="">
+               name="company" value="" required/>
 
         <input type="text" id="province" style="position:absolute;left:255px;top:255px;width:277px;height:24px;line-height:24px;z-index:6;" 
-               name="province" value="">
+               name="province" value="" required/>
 
         <input type="text" id="city" style="position:absolute;left:255px;top:219px;width:277px;height:24px;line-height:24px;z-index:7;"
-               name="city" value="">
+               name="city" value="" required/>
 
         <input type="text" id="phone" style="position:absolute;left:255px;top:327px;width:277px;height:24px;line-height:24px;z-index:8;"
-               name="phone" value="">
+               name="phone" value="" required/>
 
         <input type="text" id="postalcode" style="position:absolute;left:255px;top:291px;width:277px;height:24px;line-height:24px;z-index:9;" 
-               name="postalcode" value="">
+               name="postalcode" value="" required/>
 
         <input type="text" id="email" style="position:absolute;left:255px;top:360px;width:277px;height:24px;line-height:24px;z-index:10;" 
-               name="email" value="">
+               name="email" value="" required/>
         
         <input type="hidden" name="additional_info[]" value="" />
-        <textarea name="additional_info[]" id="additional_info" style="position:absolute;left:41px;top:587px;width:495px;height:58px;z-index:11;" rows="2" cols="76">
+        <textarea name="additional_info[]" id="additional_info" style="position:absolute;left:41px;top:587px;width:495px;height:58px;z-index:11;" rows="2" cols="76" required>
 
         </textarea>
 
 
         <div id="wb_Shape4" style="position:absolute;left:38px;top:1029px;width:223px;height:54px;z-index:12;">
 
-        <input  type="submit" name="sbt_btn" id="sbt_btn" value="Client Registration"  class="btn btn-primary" style='display:none'></button>    
+        <input  type="submit" name="sbt_btn" id="sbt_btn" value="Client Registration"  class="btn btn-primary" style='display:none' required></button>    
         
         <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0006.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
@@ -301,6 +302,7 @@ body
         <input type="checkbox"  name="area_community[]" value="They have their own lot" style="position:absolute;left:32px;top:767px;z-index:19;">
         <input type="checkbox"  name="area_community[]" value="They require a lot as well" style="position:absolute;left:31px;top:798px;z-index:20;">
 </form>
+        <script type="text/javascript">$("#Form1").validate();</script>
 </div>
 </div>
 </body>
