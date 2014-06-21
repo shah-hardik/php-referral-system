@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="//code.jquery.com/jquery.js"></script>
+         <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Referral </title>
         <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -259,31 +260,31 @@
 
 
                     <input type="text" id="fname" style="position:absolute;left:255px;top:208px;width:235px;height:24px;line-height:24px;z-index:2;" 
-                           name="fname" value="">
+                           name="fname" value="" required/>
 
                     <input type="text" id="lname" style="position:absolute;left:255px;top:244px;width:235px;height:24px;line-height:24px;z-index:3;" 
-                           name="lname" value="">
+                           name="lname" value="" required/>
 
                     <input type="text" id="streetaddress" style="position:absolute;left:255px;top:316px;width:375px;height:24px;line-height:24px;z-index:4;" 
-                           name="streetaddress" value="">
+                           name="streetaddress" value="" required/>
 
                     <input type="text" id="company" style="position:absolute;left:255px;top:280px;width:277px;height:24px;line-height:24px;z-index:5;" 
-                           name="company" value="">
+                           name="company" value="" required/>
 
                     <input type="text" id="province" style="position:absolute;left:255px;top:388px;width:277px;height:24px;line-height:24px;z-index:6;"
-                           name="province" value="">
+                           name="province" value="" required/>
 
                     <input type="text" id="city" style="position:absolute;left:255px;top:352px;width:277px;height:24px;line-height:24px;z-index:7;" 
-                           name="city" value="">
+                           name="city" value="" required/>
 
                     <input type="text" id="primaryphone" style="position:absolute;left:255px;top:460px;width:277px;height:24px;line-height:24px;z-index:8;" 
-                           name="primaryphone" value="">
+                           name="primaryphone" value="" required/>
 
                     <input type="text" id="postalcode" style="position:absolute;left:255px;top:424px;width:277px;height:24px;line-height:24px;z-index:9;" 
-                           name="postalcode" value="">
+                           name="postalcode" value="" required/>
 
                     <input type="text" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
-                           name="emailaddress" value="">
+                           name="emailaddress" value="" required/>
 
                     <textarea name="program1" id="program1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"></textarea>
 
@@ -329,6 +330,7 @@
 
                         <span style="color:#696969;font-family:Arial;font-size:13px;">Yes, I would like to receive information and updates.</span></div>
                 </form>
+                <script type="text/javascript">$("#Form1").validate();</script>
             </div>
         </div>
     </body>
