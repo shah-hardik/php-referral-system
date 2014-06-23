@@ -27,7 +27,7 @@
                 color: #000000;
             }
         </style>
-        <link rel="stylesheet" href="<?php print _MEDIA_URL ?>css/HP_referral.css" type="text/css">
+        <link rel="stylesheet" href="<?php print _MEDIA_URL ?>img/HP_referral.css" type="text/css">
         <style type="text/css">
             #wb_Text1 
             {

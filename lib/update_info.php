@@ -20,13 +20,13 @@ body
    text-align: center;
    margin: 0;
    background-color: #FFFFFF;
-   background-image: url(<?php print _MEDIA_URL ?>img/registration.jpg);
+   background-image: url(images/registration.jpg);
    background-repeat: no-repeat;
    background-position: center top;
    color: #000000;
 }
 </style>
-<link rel="stylesheet" href="<?php print _MEDIA_URL ?>img/HP_referral.css" type="text/css">
+<link rel="stylesheet" href="HP_referral.css" type="text/css">
 <style type="text/css">
 #wb_Form1
 {
@@ -217,7 +217,7 @@ body
     <form name="Form1" method="post" action="" id="Form1">
 <div id="container">
 <div id="wb_Form1" style="position:absolute;left:24px;top:214px;width:937px;height:920px;z-index:20;">
-<form name="Form1" method="post" action="" enctype="text/plain" id="Form1">
+<form name="Form1" method="post" action="mailto:yourname@yourdomain.com" enctype="text/plain" id="Form1">
 <div id="wb_Text1" style="position:absolute;left:40px;top:179px;width:407px;height:504px;z-index:0;text-align:left;">
 <div style="line-height:36px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp; </span></div>
 <div style="line-height:36px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name:* 			</span></div>

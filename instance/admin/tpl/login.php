@@ -27,7 +27,7 @@
                 color: #000000;
             }
         </style>
-        <link rel="stylesheet" href="HP_referral.css" type="text/css">
+        <link rel="stylesheet" href="<?php print _MEDIA_URL ?>img/HP_referral.css" type="text/css">
         <style type="text/css">
             #wb_Text1 
             {
@@ -125,8 +125,8 @@
         </style>
     </head>
     <body>
-        <form action="" method="post" id="loginform">
-            <script type="text/javascript">$("#loginform").validate();</script>
+        <form name="loginform" method="post" action="" id="loginform">
+          
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:348px;text-align:justify;z-index:0;">
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
@@ -145,8 +145,8 @@
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                 </div>
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
-                <input type="text"  name="username" id="username" placeholder="Enter Username"  style="position:absolute;left:747px;top:300px;width:199px;height:24px;line-height:24px;z-index:2;"  value="" required>
-                <input type="password" name="password" id="password" placeholder="Enter Password" id="password" style="position:absolute;left:747px;top:346px;width:199px;height:24px;line-height:24px;z-index:3;" value="" required>
+                <input type="text"  name="username" id="username" placeholder="Enter Username"  style="position:absolute;left:747px;top:300px;width:199px;height:24px;line-height:24px;z-index:2;"  value="" required />
+                <input type="password" name="password" id="password" placeholder="Enter Password" id="password" style="position:absolute;left:747px;top:346px;width:199px;height:24px;line-height:24px;z-index:3;" value="" required />
                 <div id="wb_Text2" style="position:absolute;left:651px;top:307px;width:87px;height:18px;z-index:4;text-align:left;">
                     <span style="color:#696969;font-family:Arial;font-size:16px;">Email</span></div>
                 <div id="wb_Text3" style="position:absolute;left:651px;top:353px;width:87px;height:18px;z-index:5;text-align:left;">
@@ -158,52 +158,27 @@
 
 
                 <div id="wb_Shape2" style="position:absolute;left:841px;top:388px;width:106px;height:26px;z-index:8;">
-                      <input type="submit" name="btn" id="btn" value="Login" class="login" style="display:none;position:absolute;left:924px;top:388px;width:106px;height:26px;z-index:8;" />
-      
-                      <a>   <img onclick='$("#btn").click()' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;"></a></div>
+                   
+                   
+            <input type="submit" id="btn" name="btn" value="btn"  class="btn btn-primary"   style="">
+
+           <img onclick='$("#btn").click();' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;">         
+                
+                </div>
                 
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:646px;top:461px;width:305px;height:1px;z-index:9;">
                 <div id="wb_Shape3" style="position:absolute;left:653px;top:495px;width:47px;height:47px;z-index:10;">
                     <img src="<?php print _MEDIA_URL ?>img/img0003.gif" id="Shape3" alt="" style="border-width:0;width:47px;height:47px;"></div>
                 <div id="wb_Text5" style="position:absolute;left:715px;top:497px;width:208px;height:38px;z-index:11;text-align:left;">
                     <span style="color:#696969;font-family:Arial;font-size:16px;"><em>Sign up to be a member of Referral Program</em></span></div>
-<!--                <div id="wb_Shape4" style="position:absolute;left:692px;top:587px;width:223px;height:54px;z-index:12;">
-                    <a href="./login"><img src="<?php print _MEDIA_URL ?>img/img0004.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></a></div>-->
+
                 <div id="wb_Text6" style="position:absolute;left:659px;top:678px;width:300px;height:36px;z-index:13;text-align:left;">
                     <span style="color:#696969;font-family:Arial;font-size:16px;">Click here to download a copy of the Referral Program Policy. </span></div>
             </div>
             </form>
+          <script type="text/javascript">$("#loginform").validate();</script>
     </body>
 </html>
 
 
 
-<!--<form action="<?php l('login'); ?>" method="post">
-    <div class="login " style="box-shadow:0 2px 7px rgba(0, 0, 0, 0.4)" >
-<?php if ($error != '') : ?>
-                <div class="error">
-                    <img src="<?php print _MEDIA_URL ?>img/login-erroe.png" width="28" height="26" alt=" " />
-                    <strong>ERROR:</strong> The password and username you entered 
-                    is incorrect. 
-                </div>
-<?php endif; ?>
-        <div class="logo" style="color:white;font-weight:bold;">
-            <img src="<?php print _MEDIA_URL ?>img/logo.png" />
-        </div>
-        <div class="fields" id="new_login" >
-            <input type="text" name="username" id="username" placeholder="Email" />
-            <input type="password" name="password" id="password" placeholder="Password" />
-            <div>
-                <input type="submit" name="submit" value="Login" class="login" style="" />
-            </div>
-            <div style="clear:both">&nbsp;</div>
-        </div>
-
-    </div>
-</form>
-
-<style type="text/css">
-    body{
-        background:url(<?php print _MEDIA_URL ?>img/bg.jpg);
-    }
-</style>-->
