@@ -37,7 +37,7 @@ function _set($var) {
  * 
  */
 function _e(&$s, $a = null) {
-    return !empty($s) ? $s : $a;
+    return!empty($s) ? $s : $a;
 }
 
 /**
@@ -113,10 +113,10 @@ function _getInstance($url) {
     switch ($arg[0]) {
         case 'admin':
             _cg('url', _e($arg[1], "home"));
-            
+
             _cg("url_instance", $arg[0]);
             _cg("instance", "admin");
-             if ($arg[1]) {
+            if ($arg[1]) {
                 array_shift($arg);
                 array_shift($arg);
                 _cg("url_vars", $arg);
@@ -136,9 +136,9 @@ function _getInstance($url) {
                 array_shift($arg);
                 _cg("url_vars", $arg);
             }
-            
     }
 }
+
 /**
  *  Wrapper function for application level
  *  global variable
@@ -282,7 +282,7 @@ function _l($string) {
 
 /**
  * 
- 
+
   Satchel DL - for One bottle of product
   Satchel A5 - for 2 bottles of product
   Satchel A4 - for 4 bottles of product
@@ -313,6 +313,7 @@ function _resolvePackaging($qty) {
     }
     return $label;
 }
+
 function _mail($to, $subject, $content, $extra = array()) {
 
     # unfortunately, need to use require within function.
@@ -341,7 +342,10 @@ function _mail($to, $subject, $content, $extra = array()) {
 
     return $result;
 }
-
+function getUserNameFromEmail($email) {
+    $data = q("select * from registration  where email  = '{$email}' ");
+    return $data[0]['email'];
+}
 function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
     # unfortunately, need to use require within function.
     # swift lib overrides the autoloader 

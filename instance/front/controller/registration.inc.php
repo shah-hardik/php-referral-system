@@ -4,8 +4,11 @@ $urlArgs = _cg("url_vars");
 // Add new User
 
 
-
 if (isset($_REQUEST['sbt_btn'])) {
+    
+   $checkmail =  getUserNameFromEmail($_REQUEST['email']);
+    if (empty($checkmail)) {
+    
     qi('registration', array(
         'username' => _escape($_REQUEST['username']),
         'password' => _escape($_REQUEST['password']),
@@ -46,5 +49,10 @@ if (isset($_REQUEST['sbt_btn'])) {
         $error = "Unable to add new User";
     }
 }
+else{ 
+    $error = "Email already Registered...";}
+    
+}
+
 $jsInclude = "registration.js.php";
 ?> 

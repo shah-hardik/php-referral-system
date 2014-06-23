@@ -294,7 +294,7 @@
                            name="password" value="">
 
                     <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
-                           name="username" value="">
+                           name="username" value=""> <span style="color:#DD0000"><?php echo $error ?> </span> 
 
                     <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
                            name="confirmpassword" value="">
