@@ -19,17 +19,24 @@ if (isset($_REQUEST['sbt_btn'])) {
         'province' => _escape($_REQUEST['province']),
         'postal_code' => _escape($_REQUEST['postalcode']),
         'phone' => _escape($_REQUEST['primaryphone']),
-        'email' => _escape($_REQUEST['emailaddress']),
-        'about_program' => _escape($_REQUEST['program1']),
+        'email' => _escape($_REQUEST['email']),
+        'about_program' => _escape($_REQUEST['about_program']),
         'like_update' => _escape($_REQUEST['like_update'])
         
             ), 'REPLACE');
     
+    $date = date("m/d");
     
      $to = "whitedove549@gmail.com";
-    $subject = "test";
-    $content = "This is first mail from Referrel Project Registration";
-    _mail('whitedove549@gmail.com','test', $content);
+    $subject = "Registered User- {$_REQUEST['username']}  | -{$date} | ";
+   
+    
+    
+   include _PATH . "instance/{$instance}/tpl/mail_registration.php";
+   
+     _mail($to,$subject, $mail);
+
+    
     
     _R(lr('home'));
 

@@ -284,9 +284,9 @@
                            name="postalcode" value="" required/>
 
                     <input type="text" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
-                           name="emailaddress" value="" required/>
+                           name="email" value="" required/>
 
-                    <textarea name="program1" id="program1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"></textarea>
+                    <textarea name="about_program" id="program1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"></textarea>
 
                     <textarea name="like_update" id="program2" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"></textarea>
 

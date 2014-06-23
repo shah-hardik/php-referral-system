@@ -248,13 +248,13 @@ body
 <input type="text" id="lname" style="position:absolute;left:255px;top:244px;width:235px;height:24px;line-height:24px;z-index:3;" name="lname" value="<?php print $each_data['lname']; ?>">
 <input type="text" id="address" style="position:absolute;left:255px;top:316px;width:375px;height:24px;line-height:24px;z-index:4;" name="address" value="<?php print $each_data['address']; ?>">
 <input type="text" id="company" style="position:absolute;left:255px;top:280px;width:277px;height:24px;line-height:24px;z-index:5;" name="company" value="<?php print $each_data['company']; ?>">
-<input type="text" id="province" style="position:absolute;left:255px;top:388px;width:277px;height:24px;line-height:24px;z-index:6;" name="Editbox1" value="<?php print $each_data['province']; ?>">
+<input type="text" id="province" style="position:absolute;left:255px;top:388px;width:277px;height:24px;line-height:24px;z-index:6;" name="province" value="<?php print $each_data['province']; ?>">
 <input type="text" id="city" style="position:absolute;left:255px;top:352px;width:277px;height:24px;line-height:24px;z-index:7;" name="city" value="<?php print $each_data['city']; ?>">
 <input type="text" id="phone" style="position:absolute;left:255px;top:460px;width:277px;height:24px;line-height:24px;z-index:8;" name="phone" value="<?php print $each_data['phone']; ?>">
 <input type="text" id="postal_code" style="position:absolute;left:255px;top:424px;width:277px;height:24px;line-height:24px;z-index:9;" name="postal_code" value="<?php print $each_data['postal_code']; ?>">
 <input type="text" id="email" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" name="email" value="<?php print $each_data['email']; ?>">
-<textarea name="TextArea1" id="TextArea1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"><?php print $each_data['about_program']; ?></textarea>
-<textarea name="TextArea1" id="TextArea2" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"><?php print $each_data['like_update']; ?></textarea>
+<textarea name="about_program" id="about_program" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"><?php print $each_data['about_program']; ?></textarea>
+<textarea name="like_update" id="like_update" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"><?php print $each_data['like_update']; ?></textarea>
 <input type="text" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" name="password" value="<?php print $each_data['password']; ?>">
 <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;" name="username" value="<?php print $each_data['username']; ?>">
 <input type="text" id="conform_password" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;" name="conform_password" value="<?php print $each_data['conform_password']; ?>">
