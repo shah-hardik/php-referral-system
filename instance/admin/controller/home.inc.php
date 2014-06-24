@@ -8,7 +8,7 @@
  * @package Refferel
  * 
  */
-_R(lr('registration'));
+_R(lr('login'));
 
 _cg("page_title", "Dashboard");
 ?>
