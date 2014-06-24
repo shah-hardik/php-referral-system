@@ -2,6 +2,7 @@
 $urlArgs = _cg("url_vars");
 
 
+
 if (isset($_REQUEST['logout'])) {
 
     User::killSession();
