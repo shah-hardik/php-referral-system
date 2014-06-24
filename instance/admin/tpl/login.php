@@ -152,7 +152,11 @@
                 <div id="wb_Text3" style="position:absolute;left:651px;top:353px;width:87px;height:18px;z-index:5;text-align:left;">
                     <span style="color:#696969;font-family:Arial;font-size:16px;">Password</span></div>
                 <div id="wb_Text4" style="position:absolute;left:711px;top:222px;width:208px;height:38px;z-index:6;text-align:left;">
-                    <span style="color:#696969;font-family:Arial;font-size:16px;"><em>Already a member? <br>Sign in here</em></span></div>
+                    <span style="color:#696969;font-family:Arial;font-size:16px;"><em>Already a member? <br>Sign in here</em>
+                      <br> <span style="color:red;font-family:Arial;font-size:14px;"> <?php echo $error; ?> 
+                        <span style="color:red;font-family:Arial;font-size:14px;"> <?php echo $message; ?>     
+                        </span>
+                    </span></div>
                 <div id="wb_Shape1" style="position:absolute;left:649px;top:222px;width:47px;height:47px;z-index:7;">
                     <img src="<?php print _MEDIA_URL ?>img/img0001.gif" id="Shape1" alt="" style="border-width:0;width:47px;height:47px;"></div>
 
@@ -160,7 +164,7 @@
                 <div id="wb_Shape2" style="position:absolute;left:841px;top:388px;width:106px;height:26px;z-index:8;">
                    
                    
-            <input type="submit" id="btn" name="btn" value="btn"  class="btn btn-primary"   style="">
+            <input type="submit" id="btn" name="btn" value="btn"  class="btn btn-primary"   style="display:none;">
 
            <img onclick='$("#btn").click();' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;">         
                 
