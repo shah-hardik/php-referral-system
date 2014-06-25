@@ -93,7 +93,11 @@
     <body>
         <form action="" method="post">
             <div id="container">
-                <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:1047px;text-align:justify;z-index:0;">
+                <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
+                    <div  class="top-message alert-success" id="success_msg_jquery">
+    <?php print $greetings; ?> &nbsp;&nbsp;<span id="success_msg_content"></span>
+</div>
+
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:</span></div>
@@ -123,19 +127,14 @@
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Add Comments:</span></div>
-                    <div style="line-height:23px;min-height:100px,overflow:auto;overflow-y:scroll;">
+                   
                     <?php foreach ($comment as $each_comment): ?>
-                        <span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $each_comment['comment']; ?></span>
+                        <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $each_comment['comment']; ?></span></div>
 
-                    <?php endforeach; ?></div>
+                    <?php endforeach; ?>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                    
                 </div>
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:653px;top:760px;width:305px;height:1px;z-index:2;">
@@ -187,7 +186,7 @@
                   <input  type="button" alt="Submit" id="updateinfo" name="update_info" style="display:none;">
                 <a href="../client_admin/<?php print $clientdata['id']; ?>"><img onclick="$('#updateinfo').click();" src="<?php print _MEDIA_URL ?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
 
-                <input onclick="alert('Comment added successfully...');" value="1" type="image"  src="<?php print _MEDIA_URL ?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:65px;top:1125px;width:230px;height:56px;z-index:11;">
+                <input onclick="('Comment added successfully...');" value="1" type="image"  src="<?php print _MEDIA_URL ?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:65px;top:1125px;width:230px;height:56px;z-index:11;">
 
 
 <!-- <input type="image" src="submit.gif" alt="Submit" name="test" style="position:absolute;left:308px;top:1128px;width:173px;height:56px;z-index:11;">-->

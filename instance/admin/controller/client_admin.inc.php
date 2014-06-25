@@ -1,5 +1,5 @@
 <?php
-
+include _PATH . "instance/{$instance}/tpl/message.php";
 $urlArgs = _cg("url_vars");
 $client_id = $urlArgs[0];
 //d($_REQUEST);
@@ -7,7 +7,10 @@ if (isset($_REQUEST['comment']) && ($_REQUEST['comment'] != '')) {
     qi('client_comment', array(
         'comment' => _escape($_REQUEST['comment']),
         'client_id' => _escape($client_id)
+        
             ), 'REPLACE');
+    $greetings = " Success!!! Notes inserted successfuly...";
+    // $_SESSION['greetings_msg'] = $greetings;
 }
 if (isset($_REQUEST['status']) && ($_REQUEST['status'] != '')) {
     qu('client_registration', array(

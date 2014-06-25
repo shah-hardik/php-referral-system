@@ -93,7 +93,12 @@
     <body>
         <form action="" method="post">
             <div id="container">
-                <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:1047px;text-align:justify;z-index:0;">
+                <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
+                    
+               <div  class="top-message alert-success" id="success_msg_jquery">
+    <?php print $greetings; ?> &nbsp;&nbsp;<span id="success_msg_content"></span>
+</div>     
+                    
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:</span></div>
@@ -129,12 +134,7 @@
                     <?php endforeach; ?>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                    
                 </div>
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:653px;top:760px;width:305px;height:1px;z-index:2;">

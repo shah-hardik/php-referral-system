@@ -11,7 +11,8 @@
     </div>
 <?php endif; ?>
 
-<?php if ($greetings || (isset($_SESSION['greetings_msg']) && $_SESSION['greetings_msg'] != '')): ?>
+<?php
+if ($greetings || (isset($_SESSION['greetings_msg']) && $_SESSION['greetings_msg'] != '')): ?>
     <?php
     if (isset($_SESSION['greetings_msg']) && $_SESSION['greetings_msg'] != '') {
         $greetings = $_SESSION['greetings_msg'];
