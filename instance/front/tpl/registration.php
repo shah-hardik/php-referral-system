@@ -290,18 +290,19 @@
 
                     <textarea name="like_update" id="program2" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"></textarea>
 
+                     <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
+                           name="username" value=""> <span style="color:#DD0000"><span class="val_name"></span><span><?php print $error;?><?php print $msg;?></span> </span> 
+
                     <input type="password" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" 
-                           name="password" value="">
+                           name="password" value=""><?php  print $error;?>
 
-                    <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
-                           name="username" value=""> <span style="color:#DD0000"><?php echo $error ?> </span> 
-
+                   
                     <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
                            name="confirmpassword" value="">
 
 
 
-                    <div id="wb_Text2" style="position:absolute;left:38px;top:43px;width:407px;height:108px;z-index:16;text-align:left;">
+                    <div id="wb_Text2" style="position:absolute;left:38px;top:43px;width:207px;height:108px;z-index:16;text-align:left;">
                         <div style="line-height:36px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Username</span>
 
                         </div>
@@ -318,7 +319,7 @@
 
                     <div id="wb_Shape4" style="position:absolute;left:45px;top:840px;width:223px;height:54px;z-index:17;">
 
-                        <input  type="submit" name="sbt_btn" id="sbt_btn" value="Create Account"  class="btn btn-primary" style='display:none'></button>
+                        <input  type="submit"  name="sbt_btn" id="sbt_btn" value="Create Account"  class="btn btn-primary" style='display:none'></button>
 
                         <img onclick='$("#sbt_btn").click();' src=" <?php print _MEDIA_URL ?>img/img0005.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
