@@ -16,11 +16,7 @@ if (isset($_REQUEST['comment']) && ($_REQUEST['comment'] != '')) {
     $greetings = " Success!!! Notes inserted successfuly...";
     // $_SESSION['greetings_msg'] = $greetings;
 }
-if (isset($_REQUEST['status']) && ($_REQUEST['status'] != '')) {
-    qu('client_registration', array(
-        'status' => _escape($_REQUEST['status'])
-            ), " id = '{$client_id}'");
-}
+
 
 
 $clientdata = qs("select * from client_registration where id = '{$urlArgs[0]}'");
