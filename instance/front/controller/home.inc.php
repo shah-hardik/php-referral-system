@@ -11,6 +11,8 @@
  */
 $urlArgs = _cg("url_vars");
 session_start();
+$_REQUEST['message'] = $regmessage;
+$regmessage = "New User Registered successfully.....";
 $_SESSION['user'] = $_REQUEST['email'];
 
 

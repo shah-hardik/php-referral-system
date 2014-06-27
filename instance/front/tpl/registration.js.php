@@ -18,16 +18,20 @@
             {
                $.ajax({
                 type:"post",
+                dataType:'json',
                 url:_U+"registration",
                 data:{usernamecheck: username},
-                success:function(data){
-                    if(data!=''){
-                        
-                        $(".val_name").html("Username already taken").css({"color":"red","font-style":"italic"});
-                    }else{
-                        $(".val_name").html("Enter Username").css({"color":"red","font-style":"italic"});
-
-                    }
+                success:function(r){
+                  
+                    if(r.msg == 1){
+                        console.log('this is 1');
+			   $(".val_name").html("Username already taken").css({"color":"red","font-style":"italic"});
+			}
+			else if(r.msg == 2)
+			{
+                            console.log('this is 2');
+			  $(".val_name").html("").css({"color":"red","font-style":"italic"});
+			}
                         
                 }
             });
