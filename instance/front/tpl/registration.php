@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="//code.jquery.com/jquery.js"></script>
-         <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
+        <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Referral </title>
         <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -290,13 +290,13 @@
 
                     <textarea name="like_update" id="program2" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"></textarea>
 
-                     <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
-                           name="username" value=""> <span style="color:#DD0000"><span class="val_name"></span><span><?php print $error;?><?php print $msg;?></span> </span> 
+                    <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
+                           name="username" value=""> <span style="color:#DD0000"><span class="val_name"></span><span><?php print $error; ?><?php print $msg; ?></span> </span> 
 
                     <input type="password" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" 
-                           name="password" value=""><?php  print $error;?>
+                           name="password" value=""><?php print $error; ?>
 
-                   
+
                     <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
                            name="confirmpassword" value="">
 

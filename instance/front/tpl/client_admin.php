@@ -101,7 +101,7 @@
                     
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:</span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:<?php print $clientdata['status']; ?></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp; <?php print $clientdata['salutation']; ?></span></div>
@@ -160,24 +160,6 @@
                     <img onclick="$('#logout').click();" src="<?php print _MEDIA_URL ?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
 
-                <select name="status" size="1" id="status" style="position:absolute;left:143px;top:272px;width:212px;height:30px;z-index:10;">
-                    <option selected value="">Select One</option>
-                    <option value="In_Progress"<?php
-                    if ($clientdata['status'] == 'In_Progress') {
-                        echo selected;
-                    }
-                    ?>>In Progress</option>
-                    <option value="Contract_Signed"<?php
-                    if ($clientdata['status'] == 'Contract_Signed') {
-                        echo selected;
-                    }
-                    ?>>Contract Signed</option>
-                    <option value="Contact_Made"<?php
-                    if ($clientdata['status'] == 'Contact_Made') {
-                        echo selected;
-                    }
-                    ?>>Contact Made</option>
-                </select>
                 <textarea name="comment" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
                 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
                     <img src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
