@@ -254,10 +254,10 @@
 
 
                     <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
-                           name="username" value=""> <span style="color:#DD0000"><span><?php print $err; ?><?php print $msg; ?></span> </span> 
+                           name="username" value=""> <span style="color:#DD0000"><?php print $msg; ?></span><span><?php print $err; ?> </span> 
 
                     <input type="password" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" 
-                           name="password" value=""><?php print $error; ?><span class="val_name"></span>
+                           name="password" value=""> <span style="color:#DD0000"><?php print $error; ?></span><span class="val_name"></span>
 
 
                     <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
@@ -291,7 +291,7 @@
                            name="primaryphone" value="" required/>
 
 
-                    <input type="text" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
+                    <input type="email" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
                            name="email" value="" required/>
 
                     <textarea name="about_program" id="program1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"></textarea>

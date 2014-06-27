@@ -1,3 +1,4 @@
+
 <?php
 ob_start();
 $mail_content = "mail_content.php" ;

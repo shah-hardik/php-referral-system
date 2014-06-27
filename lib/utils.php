@@ -342,6 +342,7 @@ function _mail($to, $subject, $content, $extra = array()) {
 
     return $result;
 }
+
 function getUserNameFromEmail($email) {
     $data = q("select * from registration  where email  = '{$email}' ");
     return $data[0]['email'];

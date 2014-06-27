@@ -8,7 +8,7 @@ if ($_REQUEST['usernamecheck'] != '') {
     $response = array();
     $username = $_REQUEST['usernamecheck'];
     $usercheck = qs("select * from registration where username = '{$username}'");
-    
+
     if ($usercheck != '') {
         $response['msg'] = '1';
     } else {
@@ -23,6 +23,7 @@ if ($_REQUEST['usernamecheck'] != '') {
 // Add new User
 
 if (isset($_REQUEST['sbt_btn'])) {
+    
     if ($_REQUEST['password'] != $_REQUEST['confirmpassword'])
         $msg = "Password And Confirm Password not match";
 
@@ -59,13 +60,14 @@ if (isset($_REQUEST['sbt_btn'])) {
             include _PATH . "instance/{$instance}/tpl/mail_registration.php";
 
             _mail($to, $subject, $mail);
-             _R(lr('home?message'));
 
-            if ($id > 0) {
-                $greetings = "New User Regestred successfully";
-            } else {
-                $error = "Unable to add new User";
-            }
+            _R(lr('home?message'));
+
+    //        if ($id > 0) {
+      //          $greetings = "New User Regestred successfully";
+        //    } else {
+          //      $error = "Unable to add new User";
+            //}
         } else {
             $error = "Email already Registered...";
         }

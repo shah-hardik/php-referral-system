@@ -130,7 +130,7 @@
 
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:348px;text-align:justify;z-index:0;">
-                    <div style="line-height:23px;"><span style="color:green;font-family:Arial;font-size:25px;"><?php print $regmessage; ?><br><br><br></span></div>
+                    <div style="line-height:23px;"><span style="color:green;font-family:Arial;font-size:20px;"><?php print $regmessage; ?><br><br><br></span></div>
                     <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong>New Home:</strong></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">We offer $1000 referral fee if a referred clients signs a new home contract with us.</span></div>

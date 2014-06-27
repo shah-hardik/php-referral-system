@@ -20,7 +20,7 @@
                 text-align: center;
                 margin: 0;
                 background-color: #FFFFFF;
-                background-image: url(<?php print _MEDIA_URL ?>img/admin.jpg);
+                background-image: url(<?php print _MEDIA_URL ?>img/my%20account.jpg);
                 background-repeat: no-repeat;
                 background-position: center top;
                 color: #000000;
@@ -95,8 +95,8 @@
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
                     
-               <div  class="top-message alert-success" id="success_msg_jquery">
-    <?php print $greetings; ?> &nbsp;&nbsp;<span id="success_msg_content"></span>
+                    <div  class="top-message alert-success" id="success_msg_jquery"><span style="color: #007700"><?php print $greetings; ?></span>
+     &nbsp;&nbsp;<span id="success_msg_content"></span>
 </div>     
                     
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
@@ -162,7 +162,8 @@
 
                 <textarea name="comment" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
                 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
-                    <img src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
+                     <input  type="submit" name="sbt_btn" id="sbt_btn" value=""  class="btn btn-primary" style='display:none'></button>
+                    <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
                 <!--<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
                   <input  type="button" alt="Submit" id="updateinfo" name="update_info" style="display:none;">
                 <a href="../client_admin/<?php print $clientdata['id']; ?>"><img onclick="$('#updateinfo').click();" src="<?php print _MEDIA_URL ?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
