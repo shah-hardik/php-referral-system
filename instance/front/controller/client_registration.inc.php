@@ -3,6 +3,18 @@
 $urlArgs = _cg("url_vars");
 // Add new Client
 
+$email=$_SESSION['user'];
+
+$reg_id= qs("select * from registration where email= '{$email}' ");
+
+    $addclient_regid =($reg_id[id]);
+       
+
+
+
+
+
+
 $client_interes=$_REQUEST['client_interes'];
 $client_interest = implode(",",$client_interes);
  
@@ -14,9 +26,9 @@ $additional_info=$_REQUEST['additional_info'];
 $additional_information = implode(",",$additional_info);
 
 
-
 if (isset($_REQUEST['sbt_btn'])) {
     qi('client_registration', array(
+        'reg_id'  => _escape($addclient_regid),
         'salutation' => _escape($_REQUEST['salution']),
         'fname' => _escape($_REQUEST['fname']),
         'lname' => _escape($_REQUEST['lname']),

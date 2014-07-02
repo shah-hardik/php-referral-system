@@ -99,10 +99,15 @@
                         <a href="<?php _U?>update_info/<?php print $reg_id['id'];?>"><img src="<?php print _MEDIA_URL ?>img/img0010.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;">
                         </a></div>
             
-                     
-   <?php $cr = 1; ?>
+                <?php $addclient_regid =($regid[id]);
+        
+  $clientdata = q("select * from client_registration where reg_id = '{$addclient_regid}' ");?>
+
+                
+                                                <?php $cr = 1; ?>
                 
                 <div style="position:absolute;left:19px;top:287px;width:535px;height:192px;z-index:8;text-align:left;">
+                   
                     <?php foreach ($clientdata as $each_client): ?>
                         
                     <div  style="">
@@ -118,7 +123,8 @@
                     <div id="wb_Shape6" style="padding-left:355px;">
                             <a href="./client_admin/<?php print $each_client['id']; ?>"><img src="<?php print _MEDIA_URL ?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
                         <?php $cr++; ?>
-                            <?php endforeach; ?></div>
+                            <?php endforeach; ?>
+                </div>
          
 
                 <input  type="submit" id="logout" name="logout"  value="logout"  class="btn btn-primary" style="display:none">

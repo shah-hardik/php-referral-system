@@ -7,12 +7,13 @@
  */
 $clientdata = q("select * from client_registration");
 $update_data = qs("select * from registration ");
-//d($update_data);
 
-$email=$_SESSION['user'];
+$email = $_SESSION['user'];
 
-$reg_id= qs("select * from registration where email= '{$email}' ");
-//d($reg_id);
+$reg_id = qs("select * from registration where email= '{$email}' ");
+
+$addclient = ($reg_id[id]);
+
 if (isset($_REQUEST['logout'])) {
 
     User::killSession();

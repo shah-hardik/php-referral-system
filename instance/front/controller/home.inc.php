@@ -14,7 +14,7 @@ session_start();
 
 
 if (isset($_REQUEST['message']) && ($_REQUEST['message'] == '') ){
-    $regmessage = "New User Registered successfully.....";
+    $regmessage = "You have been Registered, Please Login";
 }
 else
 {
@@ -36,6 +36,9 @@ if (isset($_REQUEST['sbt_btn'])) {
         $data = q("select email,password from registration where email = '$email'  AND password = '$password' ");
 
 
+        
+        
+        
         if ($data != null) {
             _R(lr('my_account'));
         } else {
@@ -44,7 +47,6 @@ if (isset($_REQUEST['sbt_btn'])) {
         }
     }
 }
-
 
 _cg("page_title", "my_account");
 ?>
