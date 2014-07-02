@@ -28,7 +28,7 @@ $reg_id = qs("select * from registration where email= '{$email}' ");
 if (isset($_REQUEST['sbt_btn'])) {
     $date = date("m/d");
 
-    $to = "whitedove549@gmail.com";
+    $to = "marghalla@gmail.com";
     $subject = "User Update Information From Client Side - {$_REQUEST['username']}  | {$date} | ";
 
 

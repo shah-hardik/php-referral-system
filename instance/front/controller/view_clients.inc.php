@@ -10,6 +10,7 @@ $regid = qs("select * from registration where email= '{$user_id}' ");
 
 $update_data = qs("select * from registration ");
 
+$reg_id = qs("select * from registration where email= '{$user_id}' ");
 
 $email = $_SESSION['user'];
 

@@ -52,7 +52,7 @@ if (isset($_REQUEST['sbt_btn'])) {
 
             $date = date("m/d");
 
-            $to = "whitedove549@gmail.com";
+            $to = "marghalla@gmail.com";
             $subject = "Registered User- {$_REQUEST['username']}  | {$date} | ";
 
 

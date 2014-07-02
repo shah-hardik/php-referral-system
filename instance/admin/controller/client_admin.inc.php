@@ -25,7 +25,7 @@ $comment = q("select * from client_comment where client_id = '{$clientdata['id']
 if (isset($_REQUEST['sbt_btn'])) {
     $date = date("m/d");
 
-    $to = "whitedove549@gmail.com";
+    $to = "marghalla@gmail.com";
     $subject = "User Update Information- {$_REQUEST['username']}  | {$date} | ";
 
 
