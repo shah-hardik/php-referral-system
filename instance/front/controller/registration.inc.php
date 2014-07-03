@@ -65,7 +65,7 @@ if (isset($_REQUEST['sbt_btn'])) {
 
             include _PATH . "instance/{$instance}/tpl/mail_registration.php";
 
-          
+        
              _mail($to1, $subject, $mail);
             
             _mail($to, $subject, $mail);

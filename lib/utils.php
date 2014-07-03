@@ -322,10 +322,11 @@ function _mail($to, $subject, $content, $extra = array()) {
 
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
-
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
             ->setUsername('systemreferal@gmail.com')
             ->setPassword('Admin1@#4');
+
+
 
     $mailer = Swift_Mailer::newInstance($transport);
 
@@ -338,16 +339,17 @@ function _mail($to, $subject, $content, $extra = array()) {
             ->setTo($to)
             ->setBody($content, 'text/html', 'iso-8859-2');
 
+
     $result = $mailer->send($message);
 
     return $result;
-    
 }
+
 function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
     # unfortunately, need to use require within function.
     # swift lib overrides the autoloader
     # and that stops native app classes being resolved and included
-d(_mail_quote);
+
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
 // if (_isLocalMachine()) {
@@ -364,7 +366,7 @@ d(_mail_quote);
     if (!is_array($to)) {
         $to = array($to);
     }
-    array_unshift($bcc, 'whitedove549@gmail.com');
+    array_unshift($bcc, 'systemreferal@gmail.com');
 
     if ($extra != '' && file_exists(_PATH . "quote/pdf/" . $extra . ".pdf")) {
         $message = Swift_Message::newInstance($subject)
@@ -387,6 +389,7 @@ d(_mail_quote);
 
     return $result;
 }
+
 function getUserNameFromEmail($email) {
     $data = q("select * from registration  where email  = '{$email}' ");
     return $data[0]['email'];
