@@ -76,9 +76,14 @@
     <body>
         <form name="Form1" method="post" action="" id="Form1">
             <div id="container">
-                <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:81px;text-align:justify;z-index:0;">
-                    <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                <div id="wb_Text1" style="position:absolute;left:20px;top:200px;width:577px;height:81px;text-align:justify;z-index:0;">
+                    
+                    <div><span style="color:#007700;font-family:Arial;font-size:28px;">
+                            
+                   <?php print $regmsg; ?></div>
+                    <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span> 
+                    </div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"> <br></span></div>
                 </div>
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:653px;top:760px;width:305px;height:1px;z-index:2;">

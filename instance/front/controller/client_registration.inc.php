@@ -44,10 +44,15 @@ if (isset($_REQUEST['sbt_btn'])) {
         'area_community' => _escape($area_communites)
         
             ), 'REPLACE');
-    _R(lr('my_account'));
+    
+     
+     
+    _R(lr('view_clients?message'));
+    
+    
 
-    if ($id > 0) {
-        $greetings = "New Client Regestred successfully";
+    if (id > 0 ) {
+        $greetings = "Client is Registered.";
     } else {
         $error = "Unable to add new Client";
     }

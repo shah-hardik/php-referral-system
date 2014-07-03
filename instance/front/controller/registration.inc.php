@@ -23,7 +23,7 @@ if ($_REQUEST['usernamecheck'] != '') {
 // Add new User
 
 if (isset($_REQUEST['sbt_btn'])) {
-    
+
     if ($_REQUEST['password'] != $_REQUEST['confirmpassword'])
         $msg = "Password And Confirm Password not match";
 
@@ -50,24 +50,27 @@ if (isset($_REQUEST['sbt_btn'])) {
                 'like_update' => _escape($_REQUEST['like_update'])
                     ), 'REPLACE');
 
+            $newmail=$_REQUEST['email'];
+           
             $date = date("m/d");
 
-            $to = "marghalla@gmail.com";
+            // $to = "marghalla@gmail.com";
+            $to = "systemreferal@gmail.com";
+            $to1 = "$newmail";
+            
+            
             $subject = "Registered User- {$_REQUEST['username']}  | {$date} | ";
 
 
 
             include _PATH . "instance/{$instance}/tpl/mail_registration.php";
 
+          
+             _mail($to1, $subject, $mail);
+            
             _mail($to, $subject, $mail);
 
             _R(lr('home?message'));
-
-    //        if ($id > 0) {
-      //          $greetings = "New User Regestred successfully";
-        //    } else {
-          //      $error = "Unable to add new User";
-            //}
         } else {
             $error = "Email already Registered...";
         }
