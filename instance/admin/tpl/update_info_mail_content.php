@@ -1,5 +1,10 @@
 <table style="font-size:12px;border-collapse:collapse" bgcolor="#FFF" cellpadding="5" cellspacing="0" width="100%" >
-
+    
+    <tr>
+        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Updated Status:</td>
+        <td style="border:1px solid #AAAAAA;"><strong><?php print $clientdata['status'] ?></strong></td>
+    </tr>
+    <tr>
     <tr>
         <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Salution:</td>
         <td style="border:1px solid #AAAAAA;"><strong><?php print $clientdata['salutation'] ?></strong></td>

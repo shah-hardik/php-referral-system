@@ -95,7 +95,7 @@
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
                     <div  class="top-message alert-success" id="success_msg_jquery">
-    <?php print $greetings; ?> &nbsp;&nbsp;<span id="success_msg_content"></span>
+                        <span id="success_msg_content" style="color:#007700;font-size: 20px;"> <?php print $greetings; ?> <?php print $sentmail_msg; ?>&nbsp;&nbsp;</span>
 </div>
 
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
@@ -181,12 +181,14 @@
                 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
                     <input  type="submit" name="sbt_btn" id="sbt_btn" value=""  class="btn btn-primary" style='display:none'></button>
                     
-                    <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
-                <!--<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
-                  <input  type="button" alt="Submit" id="updateinfo" name="update_info" style="display:none;">
-                <a href="../client_admin/<?php print $clientdata['id']; ?>"><img onclick="$('#updateinfo').click();" src="<?php print _MEDIA_URL ?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
+                    <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" 
+                         style="border-width:0;width:266px;height:54px;"></div>
+ <!--<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
+ <input  type="button" alt="Submit" id="updateinfo" name="update_info" style="display:none;">
+ <a href="../client_admin/<?php print $clientdata['id']; ?>"><img onclick="$('#updateinfo').click();" src="<?php print _MEDIA_URL ?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
 
-                <input onclick="('Comment added successfully...');" value="1" type="image"  src="<?php print _MEDIA_URL ?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:65px;top:1125px;width:230px;height:56px;z-index:11;">
+                <input onclick="('Comment added successfully...');" value="1" type="image"  src="<?php print _MEDIA_URL ?>img/img0030.gif" alt="Submit" name="update_info"
+                       style="position:absolute;left:65px;top:1125px;width:230px;height:56px;z-index:11;">
 
 
 <!-- <input type="image" src="submit.gif" alt="Submit" name="test" style="position:absolute;left:308px;top:1128px;width:173px;height:56px;z-index:11;">-->
