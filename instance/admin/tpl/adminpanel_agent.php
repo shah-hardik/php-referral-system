@@ -113,9 +113,9 @@
 
 
 
-                        <!--<div id="wb_Shape6" style="padding-left:355px;">
-                        <a href="./client_admin/<?php print $each_agent['id']; ?>"><img src="<?php print _MEDIA_URL ?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>-->
-                        <?php $cr++; ?>
+                        <div id="wb_Shape6" style="padding-left:355px;">
+                            <a href="./view_agent/<?php print $each_agent['id']; ?>"><img src="<?php print _MEDIA_URL ?>img/img0022.gif" id="Shape6" alt="" style="border-width:0;width:117px;height:30px;"></a></div>
+                       <?php $cr++; ?>
 <?php endforeach; ?></div>
 
                 <input  type="submit" id="logout" name="logout"  value="logout"  class="btn btn-primary" style="display:none">
