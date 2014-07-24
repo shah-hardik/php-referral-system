@@ -3,32 +3,32 @@
 $urlArgs = _cg("url_vars");
 // Add new Client
 
-$email=$_SESSION['user'];
+$email = $_SESSION['user'];
 
-$reg_id= qs("select * from registration where email= '{$email}' ");
+$reg_id = qs("select * from registration where email= '{$email}' ");
 
-    $addclient_regid =($reg_id[id]);
-       
-
+$addclient_regid = ($reg_id[id]);
 
 
 
 
 
-$client_interes=$_REQUEST['client_interes'];
-$client_interest = implode(",",$client_interes);
- 
 
-$area_comm=$_REQUEST['area_community'];
-$area_communites = implode(",",$area_comm);
- 
-$additional_info=$_REQUEST['additional_info'];
-$additional_information = implode(",",$additional_info);
+
+$client_interes = $_REQUEST['client_interes'];
+$client_interest = implode(",", $client_interes);
+
+
+$area_comm = $_REQUEST['area_community'];
+$area_communites = implode(",", $area_comm);
+
+$additional_info = $_REQUEST['additional_info'];
+$additional_information = implode(",", $additional_info);
 
 
 if (isset($_REQUEST['sbt_btn'])) {
     qi('client_registration', array(
-        'reg_id'  => _escape($addclient_regid),
+        'reg_id' => _escape($addclient_regid),
         'salutation' => _escape($_REQUEST['salution']),
         'fname' => _escape($_REQUEST['fname']),
         'lname' => _escape($_REQUEST['lname']),
@@ -42,16 +42,27 @@ if (isset($_REQUEST['sbt_btn'])) {
         'client_interes' => _escape($client_interest),
         'additional_information' => _escape($additional_information),
         'area_community' => _escape($area_communites)
-        
             ), 'REPLACE');
-    
-     
-     
-    _R(lr('view_clients?message'));
-    
-    
 
-    if (id > 0 ) {
+    $date = date("m/d");
+   
+    $to = "systemreferal@gmail.com";
+    $to1 = $_REQUEST['email'];
+
+    $subject = "Registered User- {$_REQUEST['fname']}  | {$date} | ";
+
+    include _PATH . "instance/{$instance}/tpl/mail_registration.php";
+
+    _mail($to1, $subject, $mail);
+   
+
+    _mail($to, $subject, $mail);
+
+    _R(lr('view_clients?message'));
+
+
+
+    if (id > 0) {
         $greetings = "Client is Registered.";
     } else {
         $error = "Unable to add new Client";
@@ -59,4 +70,3 @@ if (isset($_REQUEST['sbt_btn'])) {
 }
 ?> 
 
- 

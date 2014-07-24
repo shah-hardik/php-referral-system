@@ -38,7 +38,7 @@ if (isset($_REQUEST['sbt_btn'])) {
     $date = date("m/d");
 
 
-    $to = "$a";
+    $to = $a;
     $subject = "User Update Information- {$_REQUEST['username']}  | {$date} | ";
 
 
