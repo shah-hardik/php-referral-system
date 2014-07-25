@@ -55,10 +55,9 @@ if (isset($_REQUEST['sbt_btn'])) {
             $date = date("m/d");
 
             // $to = "marghalla@gmail.com";
-            $to = "systemreferal@gmail.com";
+            $to = SYSTEM_EMAIL;
             $to1 = $newmail;
-            
-            
+           
             $subject = "Registered User- {$_REQUEST['username']}  | {$date} | ";
 
 

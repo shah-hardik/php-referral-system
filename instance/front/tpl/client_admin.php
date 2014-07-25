@@ -101,28 +101,28 @@
                     
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Update Status:<?php print $clientdata['status']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:<b><?php print $clientdata['status']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Salutation:&nbsp; <?php print $clientdata['salutation']; ?></b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>First Name: <?php print $clientdata['fname']; ?>		</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Last Name:	<?php print $clientdata['lname']; ?>	</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Street Address:* <?php print $clientdata['address']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>City:* 	<?php print $clientdata['city']; ?>		</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Province:* <?php print $clientdata['province']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Postal Code:* <?php print $clientdata['postal_code']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Primary Phone:* 	<?php print $clientdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Email Address:*&nbsp; <?php print $clientdata['email']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>What type of project is the client interested in?</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp;<b> <?php print $clientdata['salutation']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name:<b> <?php print $clientdata['fname']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Last Name:<b>	<?php print $clientdata['lname']; ?>	</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Street Address:* <b><?php print $clientdata['address']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">City:* 	<b><?php print $clientdata['city']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Province:*<b> <?php print $clientdata['province']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Postal Code:* <b><?php print $clientdata['postal_code']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Primary Phone:* 	<b><?php print $clientdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Email Address:*&nbsp; <b><?php print $clientdata['email']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">What type of project is the client interested in?</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['client_interes']; ?></b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Please provide any additional information you may have:</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Please provide any additional information you may have:</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['additional_information']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">In the case of a new home what area/community are they interested in?</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">In the case of a new home what area/community are they interested in?</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['area_community']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Please provide any additional information you may have:</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Please provide any additional information you may have:</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>None</b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>

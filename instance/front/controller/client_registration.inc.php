@@ -46,14 +46,14 @@ if (isset($_REQUEST['sbt_btn'])) {
 
     $date = date("m/d");
    
-    $to = "systemreferal@gmail.com";
-    $to1 = $_REQUEST['email'];
+    $to = SYSTEM_EMAIL;
+   // $to1 = $_REQUEST['email'];
 
     $subject = "Registered User- {$_REQUEST['fname']}  | {$date} | ";
 
     include _PATH . "instance/{$instance}/tpl/mail_registration.php";
 
-    _mail($to1, $subject, $mail);
+    //_mail($to1, $subject, $mail);
    
 
     _mail($to, $subject, $mail);

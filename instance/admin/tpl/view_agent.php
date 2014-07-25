@@ -102,27 +102,27 @@
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                   <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Salutation:&nbsp; <?php print $agentdata['salutation']; ?></b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>First Name: <?php print $agentdata['fname']; ?>		</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Last Name:	<?php print $agentdata['lname']; ?>	</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Street Address:* <?php print $agentdata['address']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>City:* 	<?php print $agentdata['city']; ?>		</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Province:* <?php print $agentdata['province']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Postal Code:* <?php print $agentdata['postal_code']; ?>			</b></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Primary Phone:* 	<?php print $agentdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Email Address:*&nbsp; <?php print $agentdata['email']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp;<b> <?php print $agentdata['salutation']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name: <b><?php print $agentdata['fname']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Last Name:	<b><?php print $agentdata['lname']; ?>	</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Street Address:*<b> <?php print $agentdata['address']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">City:* 	<b><?php print $agentdata['city']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Province:* <b><?php print $agentdata['province']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Postal Code:*<b> <?php print $agentdata['postal_code']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Primary Phone:* 	<b><?php print $agentdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Email Address:*&nbsp;<b> <?php print $agentdata['email']; ?>			</b></span></div>
                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>About Program :<?php print $agentdata['about_program']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">About Program :<b><?php print $agentdata['about_program']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Like Update: <?php print $agentdata['like_update']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Like Update: <b><?php print $agentdata['like_update']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 
-                   <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>Comments:</b></span></div>
+                   <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Comments:</span></div>
                    
                     <?php foreach ($comment as $each_comment): ?>
                         <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $each_comment['comment']; ?></b></span></div>
