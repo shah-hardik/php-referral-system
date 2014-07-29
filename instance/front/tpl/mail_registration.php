@@ -1,5 +1,6 @@
 
 <?php
+
 ob_start();
 $mail_content = "mail_content.php" ;
 $mail_heading = "Registered User";

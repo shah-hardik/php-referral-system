@@ -43,18 +43,15 @@ if (isset($_REQUEST['sbt_btn'])) {
         'additional_information' => _escape($additional_information),
         'area_community' => _escape($area_communites)
             ), 'REPLACE');
-
+ //_R(lr('client_redirect'));
     $date = date("m/d");
    
-    //$to = SYSTEM_EMAIL;
-    $to = 'whitedove549@gmail.com';
-   // $to1 = $_REQUEST['email'];
-
+    $to = SYSTEM_EMAIL;
+    
     $subject = "Registered User- {$_REQUEST['fname']}  | {$date} | ";
 
     include _PATH . "instance/{$instance}/tpl/mail_registration.php";
 
-    //_mail($to1, $subject, $mail);
    
 
     _mail($to, $subject, $mail);
@@ -62,12 +59,6 @@ if (isset($_REQUEST['sbt_btn'])) {
     _R(lr('client_redirect'));
 
 
-
-    if (id > 0) {
-        $greetings = "Client is Registered.";
-    } else {
-        $error = "Unable to add new Client";
-    }
 }
 ?> 
 

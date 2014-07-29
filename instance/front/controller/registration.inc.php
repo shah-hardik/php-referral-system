@@ -49,7 +49,7 @@ if (isset($_REQUEST['sbt_btn'])) {
                 'about_program' => _escape($_REQUEST['about_program']),
                 'like_update' => _escape($_REQUEST['like_update'])
                     ), 'REPLACE');
-
+ 
             $newmail=$_REQUEST['email'];
            
             $date = date("m/d");
@@ -69,7 +69,7 @@ if (isset($_REQUEST['sbt_btn'])) {
             
             _mail($to, $subject, $mail);
 
-            _R(lr('home?message'));
+            _R(lr('register_redirect'));
         } else {
             $error = "Email already Registered...";
         }
