@@ -5,12 +5,15 @@
  * and open the template in the editor.
  * 
  */
+
 $clientdata = q("select * from client_registration");
 $update_data = qs("select * from registration ");
 
 $email = $_SESSION['user'];
 
 $reg_id = qs("select * from registration where email= '{$email}' ");
+
+$getclientdata = qs("select * from client_registration where email = '{$_SESSION['useremail']}'");
 
 $addclient = ($reg_id[id]);
 

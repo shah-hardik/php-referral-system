@@ -323,7 +323,7 @@ function _mail($to, $subject, $content, $extra = array()) {
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-            ->setUsername('marghalla@gmail.com')
+            ->setUsername('systemreferal@gmail.com')
             ->setPassword('Admin1@#4');
 
 
@@ -335,7 +335,7 @@ function _mail($to, $subject, $content, $extra = array()) {
     }
 
     $message = Swift_Message::newInstance($subject)
-            ->setFrom(array('marghalla@gmail.com' => 'Referal System'))
+            ->setFrom(array('systemreferal@gmail.com' => 'Referal System'))
             ->setTo($to)
             ->setBody($content, 'text/html', 'iso-8859-2');
 
@@ -366,7 +366,7 @@ function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
     if (!is_array($to)) {
         $to = array($to);
     }
-    array_unshift($bcc, 'marghalla@gmail.com');
+    array_unshift($bcc, 'systemreferal@gmail.com');
 
     if ($extra != '' && file_exists(_PATH . "quote/pdf/" . $extra . ".pdf")) {
         $message = Swift_Message::newInstance($subject)

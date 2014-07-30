@@ -68,7 +68,7 @@
 
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:328px;text-align:justify;z-index:0;">
-                    <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong>Welcome <?php print ($reg_id['username']);; ?>,</strong></span></div>
+                    <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong>Welcome <?php if($reg_id['salutation'] == 'Select One'):echo ""; else:  print ($reg_id['salutation']);; endif; ?>  <?php print ($reg_id['lname']);; ?>,</strong></span></div>
                     <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><em><br></em></span></div>
                     <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><em>This is your account and you can keep track of your referrals here.</em><strong></strong></span></div>
                     <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong><br></strong></span></div>

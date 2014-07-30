@@ -56,6 +56,8 @@ if (isset($_REQUEST['sbt_btn'])) {
 
     _mail($to, $subject, $mail);
 
+    $_SESSION['useremail'] = $_REQUEST['email'];
+    
     _R(lr('client_redirect'));
 
 
