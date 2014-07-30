@@ -7,7 +7,8 @@ if($urlArgs[0] != '')
   if(empty($deletedata))
   {
       $error = "Agent Deleted Successfuly....";
-       _R(lr(' adminpanel_agent' ));
+      $_SESSION['deletemsg'] = $error;
+       _R(lr('adminpanel_agent'));
   }
  
   

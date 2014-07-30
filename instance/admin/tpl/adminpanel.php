@@ -77,7 +77,7 @@
         <form name="Form1" method="post" action="adminpanel" id="Form1">
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:81px;text-align:justify;z-index:0;">
-                     <div style="line-height:35px;"><span style="color:green;font-family:Arial;font-size:18px;"><?php print $error; ?></span></div>
+                     <div style="line-height:35px;"><span style="color:green;font-family:Arial;font-size:18px;"><?php  $_SESSION['deletemsg']; ?></span></div>
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                 </div>
