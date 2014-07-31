@@ -6,12 +6,11 @@ if($urlArgs[0] != '')
 {
    
     $deletedata = qs("delete from client_registration where id = '{$urlArgs[0]}'");
-  if(!empty($deletedata))
-  {
+ 
       $success = "Client Deleted Successfuly....";
       $_SESSION['deletemsg'] = $success;
       _R(lr('adminpanel'));
-  }
+  
   
 }
  
