@@ -96,11 +96,11 @@
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
                     <div  class="top-message alert-success" id="success_msg_jquery">
                         <span id="success_msg_content" style="color:#007700;font-size: 20px;"> <?php print $greetings; ?> <?php print $sentmail_msg; ?>&nbsp;&nbsp;</span>
-</div>
+                    </div>
 
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered agents</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                  <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp;<b> <?php print $agentdata['salutation']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name: <b><?php print $agentdata['fname']; ?>		</b></span></div>
@@ -111,7 +111,7 @@
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Postal Code:*<b> <?php print $agentdata['postal_code']; ?>			</b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Primary Phone:* 	<b><?php print $agentdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Email Address:*&nbsp;<b> <?php print $agentdata['email']; ?>			</b></span></div>
-                   <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">About Program :<b><?php print $agentdata['about_program']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"></span></div>
@@ -122,15 +122,25 @@
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 
-                   <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Comments:</span></div>
-                   
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Comments:</span></div>
+
                     <?php foreach ($comment as $each_comment): ?>
                         <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $each_comment['comment']; ?></b></span></div>
 
                     <?php endforeach; ?>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+
+
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Eearned Money: <b> <input type="text" id="earned_money" 
+    style="position:absolute;left:255px;top:545px;width:277px;height:24px;line-height:24px;z-index:1;"name="earned_money" value="<?php print $agentdata['earned_money']; ?>" />	</b></span></div>
+<div id="wb_Shape4" style="position:absolute;left:300px;top:590px;width:223px;height:54px;z-index:17;">
+
+                        <input  type="submit"  name="sbt_btn" id="sbt_btn" value="Save"  class="btn btn-primary" style='display:none'></button>
+
+                        <img onclick='$("#sbt_btn").click();' src=" <?php print _MEDIA_URL ?>img/img0030.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
+
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    
+
                 </div>
                 <hr id="Line1" style="margin:0;padding:0;position:absolute;left:623px;top:219px;width:2px;height:687px;z-index:1;">
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:653px;top:760px;width:305px;height:1px;z-index:2;">
@@ -147,15 +157,15 @@
                     <img src="<?php print _MEDIA_URL ?>img/img0027.gif" id="Shape2" alt="" style="border-width:0;width:223px;height:54px;"></div>
                 <div id="wb_Text2" style="position:absolute;left:19px;top:287px;width:535px;height:16px;z-index:8;text-align:left;">
                     &nbsp;</div>
-                <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;">
+                <div id="wb_Shape5" style="position:absolute;left:694px;top:564px;width:223px;height:54px;z-index:9;cursor: pointer;">
                     <input  type="submit" id="logout" name="logout"  value="logout"  class="btn btn-primary" style="display:none">
                     <img onclick="$('#logout').click();" src="<?php print _MEDIA_URL ?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
 
-                
+
                 <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
                     <input  type="submit" name="sbt_btn" id="sbt_btn" value=""  class="btn btn-primary" style='display:none'></button>
-                    
+
                 </div>
 
 <!-- <input type="image" src="submit.gif" alt="Submit" name="test" style="position:absolute;left:308px;top:1128px;width:173px;height:56px;z-index:11;">-->
