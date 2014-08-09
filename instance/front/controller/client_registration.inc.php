@@ -50,7 +50,7 @@ if (isset($_REQUEST['sbt_btn'])) {
     
     $subject = "Registered User- {$_REQUEST['fname']}  | {$date} | ";
 
-    include _PATH . "instance/{$instance}/tpl/mail_registration.php";
+    include _PATH . "instance/{$instance}/tpl/client_mail_registration.php";
 
    
 
