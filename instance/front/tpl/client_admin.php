@@ -20,7 +20,7 @@
                 text-align: center;
                 margin: 0;
                 background-color: #FFFFFF;
-                background-image: url(<?php print _MEDIA_URL ?>img/admin.jpg);
+                background-image: url(<?php print _MEDIA_URL ?>img/my%20account.jpg);
                 background-repeat: no-repeat;
                 background-position: center top;
                 color: #000000;
@@ -95,43 +95,39 @@
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:761px;text-align:justify;z-index:0;overflow:auto;">
                     
-               <div  class="top-message alert-success" id="success_msg_jquery">
-    <?php print $greetings; ?> &nbsp;&nbsp;<span id="success_msg_content"></span>
+                    <div  class="top-message alert-success" id="success_msg_jquery"><span style="color: #007700"><?php print $greetings; ?></span>
+     &nbsp;&nbsp;<span id="success_msg_content"></span>
 </div>     
                     
                     <div style="line-height:35px;"><span style="color:#696969;font-family:Arial;font-size:24px;">Registered Clients</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:</span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Update Status:<b><?php print $clientdata['status']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp; <?php print $clientdata['salutation']; ?></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name: <?php print $clientdata['fname']; ?>		</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Last Name:	<?php print $clientdata['lname']; ?>	</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Street Address:* <?php print $clientdata['address']; ?>			</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">City:* 	<?php print $clientdata['city']; ?>		</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Province:* <?php print $clientdata['province']; ?>			</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Postal Code:* <?php print $clientdata['postal_code']; ?>			</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Primary Phone:* 	<?php print $clientdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Email Address:*&nbsp; <?php print $clientdata['email']; ?>			</span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Salutation:&nbsp;<b> <?php print $clientdata['salutation']; ?></b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">First Name:<b> <?php print $clientdata['fname']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Last Name:<b>	<?php print $clientdata['lname']; ?>	</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Street Address:* <b><?php print $clientdata['address']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">City:* 	<b><?php print $clientdata['city']; ?>		</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Province:*<b> <?php print $clientdata['province']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Postal Code:* <b><?php print $clientdata['postal_code']; ?>			</b></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Primary Phone:* 	<b><?php print $clientdata['phone']; ?>		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</b> </span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Email Address:*&nbsp; <b><?php print $clientdata['email']; ?>			</b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">What type of project is the client interested in?</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $clientdata['client_interes']; ?></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['client_interes']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Please provide any additional information you may have:</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $clientdata['additional_information']; ?></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['additional_information']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">In the case of a new home what area/community are they interested in?</span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $clientdata['area_community']; ?></span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b><?php print $clientdata['area_community']; ?></b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Please provide any additional information you may have:</span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">None</span></div>
+                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><b>None</b></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
 
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Add Comments:</span></div>
-                    <?php foreach ($comment as $each_comment): ?>
-                        <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><?php print $each_comment['comment']; ?></span></div>
-
-                    <?php endforeach; ?>
+                  
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     
@@ -160,32 +156,15 @@
                     <img onclick="$('#logout').click();" src="<?php print _MEDIA_URL ?>img/img0028.gif" id="Shape5" alt="" style="border-width:0;width:223px;height:54px;"></div>
 
 
-                <select name="status" size="1" id="status" style="position:absolute;left:143px;top:272px;width:212px;height:30px;z-index:10;">
-                    <option selected value="">Select One</option>
-                    <option value="In_Progress"<?php
-                    if ($clientdata['status'] == 'In_Progress') {
-                        echo selected;
-                    }
-                    ?>>In Progress</option>
-                    <option value="Contract_Signed"<?php
-                    if ($clientdata['status'] == 'Contract_Signed') {
-                        echo selected;
-                    }
-                    ?>>Contract Signed</option>
-                    <option value="Contact_Made"<?php
-                    if ($clientdata['status'] == 'Contact_Made') {
-                        echo selected;
-                    }
-                    ?>>Contact Made</option>
-                </select>
-                <textarea name="comment" id="TextArea1" style="position:absolute;left:21px;top:1006px;width:566px;height:102px;z-index:11;" rows="5" cols="88"></textarea>
-                <div id="wb_Shape6" style="position:absolute;left:308px;top:1126px;width:266px;height:54px;z-index:12;">
-                    <img src="<?php print _MEDIA_URL ?>img/img0029.gif" id="Shape6" alt="" style="border-width:0;width:266px;height:54px;"></div>
+               
+               
+               
+               
                 <!--<div id="wb_Shape7" style="position:absolute;left:22px;top:1127px;width:266px;height:54px;z-index:13;">
                   <input  type="button" alt="Submit" id="updateinfo" name="update_info" style="display:none;">
                 <a href="../client_admin/<?php print $clientdata['id']; ?>"><img onclick="$('#updateinfo').click();" src="<?php print _MEDIA_URL ?>img/img0030.gif" id="Shape7" alt="" style="border-width:0;width:266px;height:54px;"></a></div>-->
 
-                <input  value="1" type="image"  src="<?php print _MEDIA_URL ?>img/img0030.gif" alt="Submit" name="update_info" style="position:absolute;left:65px;top:1125px;width:230px;height:56px;z-index:11;">
+                
 
 
 <!-- <input type="image" src="submit.gif" alt="Submit" name="test" style="position:absolute;left:308px;top:1128px;width:173px;height:56px;z-index:11;">-->

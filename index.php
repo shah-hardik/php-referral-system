@@ -2,9 +2,9 @@
 
 /**
  *
- * @author Hardik Panchal <hardikpanchal469@gmail.com>
+ * @author Hardik Shah
  * @version 1.0
- * @package BePure
+ * @package Refferal
  * 
  * credentials:
  * 
@@ -70,10 +70,12 @@ error_reporting(0);
 
 
 # DB informaitons
-define('DB_HOST', 'localhost');
-define('DB_PASSWORD', '');
-define('DB_UNAME', 'root');
-define('DB_NAME', 'user');
+define('DB_HOST', 'refsystem.db.6819787.hostedresource.com');
+define('DB_PASSWORD', 'Hardik#123');
+define('DB_UNAME', 'refsystem');
+define('DB_NAME', 'refsystem');
+define('SYSTEM_EMAIL', 'marghalla@gmail.com');
 
+//systemreferal@gmail.com
 include "loader.php";
 ?>

@@ -130,7 +130,7 @@
 
             <div id="container">
                 <div id="wb_Text1" style="position:absolute;left:20px;top:220px;width:577px;height:348px;text-align:justify;z-index:0;">
-                    <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
+                    <div style="line-height:23px;"><span style="color:green;font-family:Arial;font-size:20px;"><?php print $regmessage; ?><br><br><br></span></div>
                     <div style="line-height:24px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><strong>New Home:</strong></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;"><br></span></div>
                     <div style="line-height:23px;"><span style="color:#696969;font-family:Arial;font-size:16px;">We offer $1000 referral fee if a referred clients signs a new home contract with us.</span></div>
@@ -162,7 +162,11 @@
                 <div id="wb_Text3" style="position:absolute;left:651px;top:353px;width:87px;height:18px;z-index:5;text-align:left;">
 
                     <span style="color:#696969;font-family:Arial;font-size:16px;">Password</span>
-                </div>
+              
+			   </div>
+			   <div id="wb_Text31" style="font-family:Arial;font-size:16px;position:absolute;left:651px;top:394px;width:115px;height:18px;z-index:5;text-align:left;">
+                <a href="./forgot_password">Forgot Password?</a>               
+			   </div>
 
                 <div id="wb_Text4" style="position:absolute;left:711px;top:222px;width:208px;height:48px;z-index:6;text-align:left;">
 
@@ -190,7 +194,7 @@
                     <img onclick='$("#sbt_btn").click();' src="<?php print _MEDIA_URL ?>img/img0002.gif" id="Shape2" alt="" style="border-width:0;width:106px;height:26px;" ></a>
 
                 </div>
-
+                 
                 <hr id="Line2" style="margin:0;padding:0;position:absolute;left:646px;top:461px;width:305px;height:1px;z-index:9;">
 
                 <div id="wb_Shape3" style="position:absolute;left:653px;top:495px;width:47px;height:47px;z-index:10;">

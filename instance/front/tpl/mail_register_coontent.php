@@ -1,6 +1,9 @@
 <table style="font-size:12px;border-collapse:collapse" bgcolor="#FFF" cellpadding="5" cellspacing="0" width="100%" >
 
-    
+    <tr>
+        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">User Name:</td>
+        <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['username'] ?></strong></td>
+    </tr>
     <tr>
         <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Salution:</td>
         <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['salution'] ?></strong></td>
@@ -35,19 +38,19 @@
     </tr>
 <tr>
         <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Primary Phone:</td>
-        <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['phone'] ?></strong></td>
+        <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['primaryphone'] ?></strong></td>
     </tr>
 <tr>
         <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Email:</td>
         <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['email'] ?></strong></td>
     </tr>
 <tr>
-        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Client Interested:</td>
-        <td style="border:1px solid #AAAAAA;"><strong><?php echo $client_interest ?></strong></td>
+        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">About Program:</td>
+        <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['about_program'] ?></strong></td>
     </tr>
 <tr>
-        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">area/community interested:</td>
-        <td style="border:1px solid #AAAAAA;"><strong><?php echo $area_communites ?></strong></td>
+        <td  width="20%" style="border:1px solid #AAAAAA;" align="right">Like Update:</td>
+        <td style="border:1px solid #AAAAAA;"><strong><?php print $_REQUEST['like_update'] ?></strong></td>
     </tr>
 
 </table>

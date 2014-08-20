@@ -2,12 +2,7 @@
 
 $urlArgs = _cg("url_vars");
 $client_id = $urlArgs[0];
-//d($_REQUEST);
-if (isset($_REQUEST['logout'])) {
 
-    User::killSession();
-    _R(lr('home'));
-}
 if (isset($_REQUEST['comment']) && ($_REQUEST['comment'] != '')) {
     qi('client_comment', array(
         'comment' => _escape($_REQUEST['comment']),
@@ -16,11 +11,7 @@ if (isset($_REQUEST['comment']) && ($_REQUEST['comment'] != '')) {
     $greetings = " Success!!! Notes inserted successfuly...";
     // $_SESSION['greetings_msg'] = $greetings;
 }
-if (isset($_REQUEST['status']) && ($_REQUEST['status'] != '')) {
-    qu('client_registration', array(
-        'status' => _escape($_REQUEST['status'])
-            ), " id = '{$client_id}'");
-}
+
 
 
 $clientdata = qs("select * from client_registration where id = '{$urlArgs[0]}'");
@@ -33,6 +24,24 @@ $update_data = qs("select * from registration ");
 $email = $_SESSION['user'];
 
 $reg_id = qs("select * from registration where email= '{$email}' ");
+
+if (isset($_REQUEST['sbt_btn'])) {
+    $date = date("m/d");
+
+    $to = "systemreferal@gmail.com";
+    $subject = "User Update Information From Client Side - {$_REQUEST['username']}  | {$date} | ";
+
+
+
+    include _PATH . "instance/{$instance}/tpl/update_info_mail_front.php";
+
+    _mail($to, $subject, $mail);
+}
+
+
+
+
+
 
 if (isset($_REQUEST['logout'])) {
 

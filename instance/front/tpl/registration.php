@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="//code.jquery.com/jquery.js"></script>
-         <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
+        <script type="text/javascript" src="<?php print _MEDIA_URL ?>validate.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Referral </title>
         <meta name="generator" content="WYSIWYG Web Builder 8 - http://www.wysiwygwebbuilder.com">
@@ -252,6 +252,16 @@
                         <div style="line-height:18px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Please enter any comments or questions you may have:</span></div>
                     </div>
 
+
+                    <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
+                           name="username" value=""> <span style="color:#DD0000"><?php print $msg; ?></span><span><?php print $err; ?> </span> 
+
+                    <input type="password" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" 
+                           name="password" value=""> <span style="color:#DD0000"><?php print $error; ?></span><span class="val_name"></span>
+
+
+                    <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
+                           name="confirmpassword" value="">
                     <select name="salution" size="1" id="salution" style="position:absolute;left:256px;top:174px;width:162px;height:26px;z-index:1;">
                         <option selected value="Select One">Select One</option>
                         <option value="Mr">Mr</option>
@@ -264,44 +274,35 @@
 
                     <input type="text" id="lname" style="position:absolute;left:255px;top:244px;width:235px;height:24px;line-height:24px;z-index:3;" 
                            name="lname" value="" required/>
-
+                    <input type="text" id="company" style="position:absolute;left:255px;top:280px;width:277px;height:24px;line-height:24px;z-index:5;" 
+                           name="company" value="" required/>
                     <input type="text" id="streetaddress" style="position:absolute;left:255px;top:316px;width:375px;height:24px;line-height:24px;z-index:4;" 
                            name="streetaddress" value="" required/>
 
-                    <input type="text" id="company" style="position:absolute;left:255px;top:280px;width:277px;height:24px;line-height:24px;z-index:5;" 
-                           name="company" value="" required/>
-
-                    <input type="text" id="province" style="position:absolute;left:255px;top:388px;width:277px;height:24px;line-height:24px;z-index:6;"
-                           name="province" value="" required/>
-
                     <input type="text" id="city" style="position:absolute;left:255px;top:352px;width:277px;height:24px;line-height:24px;z-index:7;" 
                            name="city" value="" required/>
+                    <input type="text" id="province" style="position:absolute;left:255px;top:388px;width:277px;height:24px;line-height:24px;z-index:6;"
+                           name="province" value="" required/>
+                    <input type="text" id="postalcode" style="position:absolute;left:255px;top:424px;width:277px;height:24px;line-height:24px;z-index:9;" 
+                           name="postalcode" value="" required/>
+
 
                     <input type="text" id="primaryphone" style="position:absolute;left:255px;top:460px;width:277px;height:24px;line-height:24px;z-index:8;" 
                            name="primaryphone" value="" required/>
 
-                    <input type="text" id="postalcode" style="position:absolute;left:255px;top:424px;width:277px;height:24px;line-height:24px;z-index:9;" 
-                           name="postalcode" value="" required/>
 
-                    <input type="text" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
+                    <input type="email" id="emailaddress" style="position:absolute;left:255px;top:493px;width:277px;height:24px;line-height:24px;z-index:10;" 
                            name="email" value="" required/>
 
                     <textarea name="about_program" id="program1" style="position:absolute;left:41px;top:570px;width:495px;height:58px;z-index:11;" rows="2" cols="76"></textarea>
 
                     <textarea name="like_update" id="program2" style="position:absolute;left:42px;top:678px;width:495px;height:58px;z-index:12;" rows="2" cols="76"></textarea>
 
-                    <input type="password" id="password" style="position:absolute;left:254px;top:75px;width:235px;height:24px;line-height:24px;z-index:13;" 
-                           name="password" value="">
-
-                    <input type="text" id="username" style="position:absolute;left:254px;top:36px;width:235px;height:24px;line-height:24px;z-index:14;"
-                           name="username" value=""> <span style="color:#DD0000"><?php echo $error ?> </span> 
-
-                    <input type="password" id="confirmpassword" style="position:absolute;left:254px;top:113px;width:235px;height:24px;line-height:24px;z-index:15;"
-                           name="confirmpassword" value="">
+                    <input type="checkbox" id="Checkbox1" name="" value="on" style="position:absolute;left:44px;top:776px;z-index:18;">
 
 
 
-                    <div id="wb_Text2" style="position:absolute;left:38px;top:43px;width:407px;height:108px;z-index:16;text-align:left;">
+                    <div id="wb_Text2" style="position:absolute;left:38px;top:43px;width:207px;height:108px;z-index:16;text-align:left;">
                         <div style="line-height:36px;"><span style="color:#696969;font-family:Arial;font-size:16px;">Username</span>
 
                         </div>
@@ -318,11 +319,9 @@
 
                     <div id="wb_Shape4" style="position:absolute;left:45px;top:840px;width:223px;height:54px;z-index:17;">
 
-                        <input  type="submit" name="sbt_btn" id="sbt_btn" value="Create Account"  class="btn btn-primary" style='display:none'></button>
+                        <input  type="submit"  name="sbt_btn" id="sbt_btn" value="Create Account"  class="btn btn-primary" style='display:none'></button>
 
                         <img onclick='$("#sbt_btn").click();' src=" <?php print _MEDIA_URL ?>img/img0005.gif" id="Shape4" alt="" style="border-width:0;width:223px;height:54px;"></div>
-
-                    <input type="checkbox" id="Checkbox1" name="" value="on" style="position:absolute;left:44px;top:776px;z-index:18;">
 
 
 

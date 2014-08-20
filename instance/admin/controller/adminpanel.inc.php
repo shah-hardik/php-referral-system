@@ -2,7 +2,18 @@
 $urlArgs = _cg("url_vars");
 
 
-
+if($urlArgs[0] != '')
+{
+   
+    $deletedata = qs("delete from client_registration where id = '{$urlArgs[0]}'");
+ 
+      $success = "Client Deleted Successfuly....";
+      $_SESSION['deletemsg'] = $success;
+      _R(lr('adminpanel'));
+  
+  
+}
+ 
 if (isset($_REQUEST['logout'])) {
 
     User::killSession();
@@ -10,6 +21,7 @@ if (isset($_REQUEST['logout'])) {
 }
 
 $clientdata = q("select * from client_registration");
+
 
 if (isset($_REQUEST['logout'])) {
 

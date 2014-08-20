@@ -252,8 +252,8 @@ body
         <input type="text" id="lname" style="position:absolute;left:255px;top:111px;width:235px;height:24px;line-height:24px;z-index:3;"
                name="lname" value="" required/>
         
-        <input type="text" id="address" style="position:absolute;left:255px;top:183px;width:375px;height:24px;line-height:24px;z-index:4;" 
-                 name="address" value="" required/>
+        <input type="text" id="streetaddress" style="position:absolute;left:255px;top:183px;width:375px;height:24px;line-height:24px;z-index:4;" 
+                 name="streetaddress" value="" required/>
 
         <input type="text" id="company" style="position:absolute;left:255px;top:147px;width:277px;height:24px;line-height:24px;z-index:5;" 
                name="company" value="" required/>

@@ -316,47 +316,70 @@ function _resolvePackaging($qty) {
 
 function _mail($to, $subject, $content, $extra = array()) {
 
+
+$message=$content;
+//d($to);
+//d($subject);
+//d($message);
+//d($mail);
+
+$headers = "MIME-Version: 1.0" . "\r\n";
+$headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+// More headers
+$headers .= 'From: referral@systemreferal.com' . "\r\n";
+	mail($to,$subject,$message,$headers);
+ 
+
+
+ 
+ return;
+//echo "heloooo";
     # unfortunately, need to use require within function.
     # swift lib overrides the autoloader 
     # and that stops native app classes being resolved and included
 
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
-
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-            ->setUsername('hardikpanchal469@gmail.com')
-            ->setPassword('panchal1@#4');
+            ->setUsername('systemreferal@gmail.com')
+            ->setPassword('Admin1@#4');
+
+
 
     $mailer = Swift_Mailer::newInstance($transport);
 
-    if (!is_array($to)) {
-        $to = array($to);
+	
+
+if (!is_array($to)) {
+       $to = array($to);
     }
 
+
     $message = Swift_Message::newInstance($subject)
-            ->setFrom(array('hardikpanchal469@gmail.com' => 'Hardik Panchal'))
-            ->setTo($to)
+            ->setFrom(array('systemreferal@gmail.com' => 'Referal System'))
+			->setTo($to)
             ->setBody($content, 'text/html', 'iso-8859-2');
 
-    $result = $mailer->send($message);
 
+    $result = $mailer->send($message);
     return $result;
 }
-function getUserNameFromEmail($email) {
-    $data = q("select * from registration  where email  = '{$email}' ");
-    return $data[0]['email'];
-}
+
 function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
+
+
+
     # unfortunately, need to use require within function.
-    # swift lib overrides the autoloader 
+    # swift lib overrides the autoloader
     # and that stops native app classes being resolved and included
 
     require_once _PATH . 'lib/mail/swift/lib/swift_required.php';
 
-//    if (_isLocalMachine()) {
-//        //_l("To Email is overwritten by -  temp@go-brilliant.com  due to dev localmachine ");
-//        $to = 'temp@go-brilliant.com';
-//    }
+// if (_isLocalMachine()) {
+// //_l("To Email is overwritten by - temp@go-brilliant.com due to dev localmachine ");
+// $to = 'temp@go-brilliant.com';
+// }
 
     $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
             ->setUsername(SMTP_EMAIL_USER_NAME_QUOTE)
@@ -367,7 +390,7 @@ function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
     if (!is_array($to)) {
         $to = array($to);
     }
-    array_unshift($bcc, 'whitedove549@gmail.com');
+    array_unshift($bcc, 'systemreferal@gmail.com');
 
     if ($extra != '' && file_exists(_PATH . "quote/pdf/" . $extra . ".pdf")) {
         $message = Swift_Message::newInstance($subject)
@@ -390,3 +413,9 @@ function _mail_quote($to, $bcc, $subject, $content, $extra = array()) {
 
     return $result;
 }
+
+function getUserNameFromEmail($email) {
+    $data = q("select * from registration  where email  = '{$email}' ");
+    return $data[0]['email'];
+}
+
